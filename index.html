@@ -24,104 +24,120 @@
   <div class="quiz-section">
     <form class="quiz-form" id="quiz-form">
       <div class="form-group quiz-name">
-        <label for="user-name">Name</label>
+        <p for="user-name">Name</p>
         <input type="text" class="form-control" id="user-name" placeholder="Enter your name..">
       </div>
       <!-- Question one -->
-      <div class="form-group quiz-vacation">
-        <label for="quiz-name">What is your favorite vacation destination?</label>
+      <div class="form-group centered quiz-vacation">
+        <p for="quiz-name">What is your favorite vacation destination?</p>
         <div class="quiz-vacation-images row">
-          <div class="col">
+          <div class="col-3">
             <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image">
           </div>
         </div>
       </div>
       <!-- Question two -->
       <div class="form-group quiz-work">
-        <label for="quiz-work">If you face a problem at work, what is the first thing you do?</label>
+        <p for="quiz-work">If you face a problem at work, what is the first thing you do?</p>
         <div class="quiz-work-questions">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="work-question" id="work-question" value="sanguin">
-            <label class="form-check-label" for="work-question">Ask for help</label>
+          <div class="row">
+            <div class="form-check col-6">
+              <input class="form-check-input" type="radio" name="work-question" id="work-question" value="sanguin">
+              <label class="form-check-label" for="work-question">Ask for help</label>
+            </div>
+            <div class="form-check col-6">
+              <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
+              <label class="form-check-label" for="work-question">Delegate the task to someone else</label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
-            <label class="form-check-label" for="work-question">Delegate the task to someone else</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
-            <label class="form-check-label" for="work-question">Research potential solutions</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
-            <label class="form-check-label" for="work-question">Make excuses</label>
+          <div class="row">
+            <div class="form-check col-6">
+              <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
+              <label class="form-check-label" for="work-question">Research potential solutions</label>
+            </div>
+            <div class="form-check col-6">
+              <input class="form-check-input" type="radio" name="work-question" id="work-question" value="">
+              <label class="form-check-label" for="work-question">Make excuses</label>
+            </div>
           </div>
         </div>
       </div>
       <!-- Question three -->
       <div class="form-group quiz-color">
-        <label for="quiz-color">What's your favorite color?</label>
+        <p for="quiz-color">What is your favorite color?</p>
         <div class="quiz-color-images row">
-          <div class="col">
+          <div class="col-3">
             <img src="assets/colors/green-phlegmatics.png" alt="green" class="color-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/colors/red-choleric.png" alt="red" class="color-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/colors/yellow-sanguine.png" alt="yellow" class="color-image">
           </div>
-          <div class="col">
+          <div class="col-3">
             <img src="assets/colors/blue-melancholic.png" alt="blue" class="color-image">
           </div>
         </div>
       </div>
       <!-- Question four -->
-      <div class="form-group quiz-game">
-        <label for="quiz-game"> What was your favorite game when you were a child?</label>
-        <div class="quiz-games-images row">
-          <div class="col">
-            <img src="assets/games/gaming.jpeg" alt="gaming" class="game-image"><!--Melancholic-->
+      <div class="form-group quiz-nature">
+        <p for="">If asked, what would your friends and family say about you?</p>
+        <div class="quiz-nature-questions row">
+          <div class="col-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature-question" value="sanguin">
+              <label class="form-check-label" for="nature-question">Kind</label>
+            </div>
           </div>
-          <div class="col">
-            <img src="assets/games/scrabble.jpeg" alt="scrabble" class="game-image"><!--Phlegmatic-->
+          <div class="col-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature-question" value="">
+              <label class="form-check-label" for="nature-question">Smart</label>
+            </div>
           </div>
-          <div class="col">
-            <img src="assets/games/twister.jpeg" alt="twister" class="game-image"><!--Sanguins-->
+          <div class="col-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature-question" value="">
+              <label class="form-check-label" for="nature-question">Caring</label>
+            </div>
           </div>
-          <div class="col">
-            <img src="assets/games/slot.jpeg" alt="slot-machine" class="game-image"><!--Cholerics-->
+          <div class="col-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature-question" value="">
+              <label class="form-check-label" for="nature-question">Quiet</label>
+            </div>
           </div>
         </div>
       </div>
       <!-- Question five -->
-      <div class="form-group quiz-nature">
-        <label for="">If asked, what would your friends and family say about you?</label>
-        <div class="quiz-nature-questions">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="nature-question" value="sanguin">
-            <label class="form-check-label" for="nature-question">Kind</label>
+      <div class="form-group quiz-game">
+        <p for="quiz-game"> What was your favorite game when you were a child?</p>
+        <div class="quiz-games-images row">
+          <div class="col-3">
+            <img src="assets/games/gaming.jpeg" alt="gaming" class="game-image">
+            <!--Melancholic-->
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="nature-question" value="">
-            <label class="form-check-label" for="nature-question">Smart</label>
+          <div class="col-3">
+            <img src="assets/games/scrabble.jpeg" alt="scrabble" class="game-image">
+            <!--Phlegmatic-->
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="nature-question" value="">
-            <label class="form-check-label" for="nature-question">Caring</label>
+          <div class="col-3">
+            <img src="assets/games/twister.jpeg" alt="twister" class="game-image">
+            <!--Sanguins-->
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="nature-question" value="">
-            <label class="form-check-label" for="nature-question">Quiet</label>
+          <div class="col-3">
+            <img src="assets/games/slot.jpeg" alt="slot-machine" class="game-image">
+            <!--Cholerics-->
           </div>
         </div>
       </div>

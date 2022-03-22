@@ -2,3 +2,39 @@ body{
     box-sizing: border-box;
     padding: 1em;
 }
+p{text-align: center;}
+
+/* Form styling */
+.quiz-form{
+    padding: 0 10vw;
+}
+
+.user-name{
+    text-align: center;
+}
+
+.form-group{
+    margin: 6vh;
+}
+
+.vacation-image{
+    height: 25vh;
+    width: 20vw;
+    padding: 1vw;
+}
+
+.color-image{
+    height: 20vh;
+    width: 15vw;
+    /* padding: 1vw; */
+}
+
+.game-image{
+    height: 20vh;
+    width: 15vw;
+    /* padding: 1vw;  */
+}
+
+
+
+
