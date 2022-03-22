@@ -1,0 +1,66 @@
+body{
+    box-sizing: border-box;
+    padding: 1em;
+}
+p{text-align: center;}
+
+/* Form styling */
+.quiz-form{
+    padding: 0 10vw;
+}
+
+.user-name{
+    text-align: center;
+}
+
+.form-group{
+    margin: 6vh;
+}
+
+.quiz-work-questions{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.quiz-nature-questions{
+    padding: 2vw;
+}
+
+.quiz-submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.vacation-image{
+    height: 30vh;
+    width: 25vw;
+    padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-image{
+    height: 20vh;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-image{
+    height: 25vh;
+    width: 25vw;
+    padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
