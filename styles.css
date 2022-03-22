@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Montserrat&display=swap');
+
+/* To import the different fonts you will use;
+heading- font-family: 'Inspiration', cursive;
+body-font-family: 'Montserrat', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;    
+    overflow-x: hidden;
+         
+  }
+
+  li {
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;    
+    margin-top: 17px;    
+  }
+
+  a{
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: bold; 
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  margin-top: 1px;
+  
+  }
+  button{
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: bold; 
+    font-size: 16px;    
+    text-decoration: none;       
+    }
+
+  header{
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 10% ;      
+      background:rgba(255,255,255, 0.6);
+     
+  }
+
+  .logo {
+      cursor: pointer;
+      margin-right: auto;
+  }
+
+  .nav__links {
+      list-style: none;
+  }
+
+  .nav__links li{
+      display:inline-block;
+      padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+      transition: all 0.3s ease os;
+  }
+
+  .nav__links li a:hover {
+      color: #0088a9
+  }
+
+  button{      
+      padding: 8px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease os;
+      color: white;
+      margin-left: 20px;
+  }
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.container-fluid-main{
+    padding-top: 30%;
+    margin-top: 30%;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .header {
+    height: 95vh;
+    background-image: url(assets/Header-Image.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+body{
+    box-sizing: border-box;
+    padding: 1em;
+}
+p{text-align: center;}
+
+/* Form styling */
+.quiz-form{
+    padding: 0 10vw;
+}
+
+.user-name{
+    text-align: center;
+}
+
+.form-group{
+    margin: 6vh;
+}
+
+.quiz-work-questions{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.quiz-nature-questions{
+    padding: 2vw;
+}
+
+.quiz-submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.vacation-image{
+    height: 30vh;
+    width: 25vw;
+    padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-image{
+    height: 20vh;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-image{
+    height: 25vh;
+    width: 25vw;
+    padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
