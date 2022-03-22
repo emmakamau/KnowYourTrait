@@ -15,7 +15,8 @@ $(document).ready(function(){
     $("#start-test").click(function(){
         $("#quiz-form").show();
        
-       
+
+        $(window).scrollTop($('a#quiz-form').position().top);
 
     });
 
