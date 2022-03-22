@@ -5,4 +5,5 @@
 
 $(document).ready(function(){
 	// Execute JavaScript code as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
+   
 })
