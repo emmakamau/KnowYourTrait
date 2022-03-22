@@ -20,18 +20,24 @@ $(document).ready(function(){
 
     });
 
-
-
-
-
-
-
-
-
-
-
-
 })
+
+/* Adding functionality to Scroll button */
+const scrollButton=document.getElementById("scrollButton");
+const goToTop=document.body.scrollTop;
+window.onscroll=()=>{
+    if(goToTop>100 || document.documentElement.scrollTop>100){
+        scrollButton.style.display="block";
+
+    }else{
+        scrollButton.style.display="none"
+    }
+};
+
+scrollButton.onclick=()=>{
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+}
 
 
 
