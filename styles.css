@@ -187,10 +187,21 @@ p{text-align: center;}
   input[type=submit]:hover {
     background-color: brown;
 }
-.container {
+#contact{
     border-radius: 5px;
     background-color:beige;
     padding: 20px;
+    margin-top: 5%;
+
+   
+}
+.fa-circle-arrow-up{
+  cursor: pointer;
+  margin-left: 1060px;
+  margin-top: 77px;
+  color: purple ;
+
+ 
 }
 
 
