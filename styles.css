@@ -17,22 +17,48 @@ p{text-align: center;}
     margin: 6vh;
 }
 
+.quiz-work-questions{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.quiz-nature-questions{
+    padding: 2vw;
+}
+
+.quiz-submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
 .vacation-image{
-    height: 25vh;
-    width: 20vw;
+    height: 30vh;
+    width: 25vw;
     padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .color-image{
     height: 20vh;
     width: 15vw;
-    /* padding: 1vw; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .game-image{
-    height: 20vh;
-    width: 15vw;
-    /* padding: 1vw;  */
+    height: 25vh;
+    width: 25vw;
+    padding: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
