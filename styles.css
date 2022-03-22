@@ -154,6 +154,10 @@ p{text-align: center;}
     margin-right: auto;
 }
 
+.vacation-image-selected{
+    border: 2px solid blue;
+}
+
 .color-image{
     height: 20vh;
     width: 15vw;
