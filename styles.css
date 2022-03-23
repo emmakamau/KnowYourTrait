@@ -329,6 +329,10 @@ input[type=submit]:hover {
     color: purple;
     
 }
+/* Styling for results */
+.results-section{
+  display: none;
+}
 
 /*Style the scroll button*/
 .fa-circle-arrow-up{
