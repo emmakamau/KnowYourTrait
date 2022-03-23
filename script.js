@@ -90,6 +90,13 @@ $(document).ready(function(){
         colorQuestion = newUser.colorQuestion()
         gameQuestion = newUser.gameQuestion()
 
+        var traitList = {
+            "Sanguin": sanguin,
+            "Choleric": choleric,
+            "Phlegmatic": phlegmatic,
+            "Melancholic": melancholic,
+        }
+
         if(sanguin > melancholic && phlegmatic && choleric){
             alert(`Hey ${userName}, You are a Sanguin`)
         }else if(melancholic > sanguin && phlegmatic && choleric){
