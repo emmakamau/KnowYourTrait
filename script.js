@@ -90,12 +90,21 @@ $(document).ready(function(){
         colorQuestion = newUser.colorQuestion()
         gameQuestion = newUser.gameQuestion()
 
+        if(sanguin > melancholic && phlegmatic && choleric){
+            alert(`Hey ${userName}, You are a Sanguin`)
+        }else if(melancholic > sanguin && phlegmatic && choleric){
+            alert(`Hey ${userName}, You are a Melancholic`)
+        }else if(phlegmatic > sanguin && choleric && melancholic){
+            alert(`Hey ${userName}, You are a Phlegmatic`)
+        }else{
+            alert(`Hey ${userName}, You are a Choleric`)
+        }
+
         console.log(`My name is ${userName}`)
         console.log("Sanguin", sanguin)
         console.log("Melancholic", melancholic)
         console.log("Choleric", choleric)
         console.log("Phlegmatic", phlegmatic)
-        alert(userName)
     })
 
     $("img").click(function(){})
