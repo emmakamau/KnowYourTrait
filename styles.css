@@ -72,16 +72,16 @@ body-font-family: 'Montserrat', sans-serif; */
       color: #0088a9
   }
 
-  button{      
-      padding: 8px 25px;
-      background-color: rgba(0, 136, 169, 1);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease os;
-      color: white;
-      margin-left: 20px;
-  }
+button{      
+    padding: 8px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease os;
+    color: white;
+    margin-left: 20px;
+}
 
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
@@ -116,9 +116,31 @@ body{
 p{text-align: center;}
 
 /* Form styling */
+.quiz-intro{
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    font-size: 5vw;
+    padding-bottom: 2vh;
+    color: rgba(0, 136, 169, 1);
+    font-weight: bold;
+}
+
 .quiz-form{
     padding: 0 10vw;
 }
+
+.quiz-vacation, .quiz-name, .quiz-work, .quiz-color, .quiz-nature, .quiz-game, #quiz-submit{
+    display: none;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 .user-name{
     text-align: center;
@@ -144,6 +166,16 @@ p{text-align: center;}
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    background-color: rgba(0, 136, 169, 1) !important;
+}
+
+.nxt-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 4vh;
+    background-color: rgba(0, 136, 169, 1) !important;
 }
 
 .vacation-image{
@@ -153,12 +185,6 @@ p{text-align: center;}
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.vacation-image-selected{
-    border: 2px solid blue;
-    height: 32vh;
-    width: 27vw;
 }
 
 .color-image{
@@ -178,16 +204,8 @@ p{text-align: center;}
     margin-right: auto;
 }
 
-.quiz-form{
-    display: none;
-}input[type=submit] {
-    background-color: purple;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+
+
   input[type=submit]:hover {
     background-color: brown;
 }

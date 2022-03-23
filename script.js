@@ -85,9 +85,39 @@ $(document).ready(function(){
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
-        $("#quiz-form").show();
+        $("#quiz-name").show();
+        $("#contact").hide()
+        $("#landing-section").hide()
+        $("#start-test").hide()
         //$(window).scrollTop($('a#quiz-form').position().top);
     });
+
+    /* Next btn hide and show different questions */
+    $("#show-vacation-quiz").click(function(){
+        $("#quiz-name").hide()
+        $("#quiz-vacation").show()
+    })
+
+    $("#show-work-quiz").click(function(){
+        $("#quiz-vacation").hide()
+        $("#quiz-work").show()
+    })
+
+    $("#show-color-quiz").click(function(){
+        $("#quiz-work").hide()
+        $("#quiz-color").show()
+    })
+
+    $("#show-nature-quiz").click(function(){
+        $("#quiz-color").hide()
+        $("#quiz-nature").show()
+    })
+
+    $("#show-game-quiz").click(function(){
+        $("#quiz-nature").hide()
+        $("#quiz-game").show()
+        $("#quiz-submit").show()
+    })
 
     /* Adding functionality to Scroll button */
     const scrollButton=document.getElementById("scrollButton");
@@ -104,7 +134,6 @@ $(document).ready(function(){
         document.body.scrollTop=0;
         document.documentElement.scrollTop=0;
     }
-    $('#quiz-work').click(function(){alert("Clicked me")})
 })
 
 

@@ -35,7 +35,7 @@
     </nav>
     <a class="cta" href="#"><button id="start-test">Start Test</button></a>
   </header>
-  <div class="container-fluid-main m-0 p-0">
+  <div class="container-fluid-main m-0 p-0" id="landing-section">
     <div class="container-fluid header">
       <div class="row">
       </div>
@@ -46,12 +46,14 @@
   <!-- Quiz Section -->
   <div class="quiz-section">
     <form class="quiz-form" id="quiz-form">
-      <div class="form-group quiz-name">
+      <div class="form-group quiz-name" id="quiz-name">
+        <h3 class="quiz-intro">Welcome to the Know Your Trait quiz extravaganza!</h3>
         <p for="user-name">Name</p>
         <input type="text" class="form-control" id="user-name" placeholder="Enter your name..">
+        <span class="btn btn-primary nxt-btn" id="show-vacation-quiz">NEXT</span>
       </div>
       <!-- Question one -->
-      <div class="form-group centered quiz-vacation">
+      <div class="form-group centered quiz-vacation" id="quiz-vacation">
         <p for="quiz-name">What is your favorite vacation destination?</p>
         <div class="quiz-vacation-images row">
           <div class="row">
@@ -70,10 +72,11 @@
               <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip">
             </div>
           </div>
+          <span class="btn btn-primary nxt-btn" id="show-work-quiz">NEXT</span>
         </div>
       </div>
       <!-- Question two -->
-      <div class="form-group quiz-work">
+      <div class="form-group quiz-work" id="quiz-work">
         <p for="quiz-work" id="quiz-work">If you face a problem at work, what is the first thing you do?</p>
         <div class="quiz-work-questions">
           <div class="row">
@@ -100,10 +103,11 @@
               <label class="form-check-label" for="work-question">Make excuses</label>
             </div>
           </div>
+          <span class="btn btn-primary nxt-btn" id="show-color-quiz">NEXT</span>
         </div>
       </div>
       <!-- Question three -->
-      <div class="form-group quiz-color">
+      <div class="form-group quiz-color" id="quiz-color">
         <p for="quiz-color">What is your favorite color?</p>
         <div class="quiz-color-images">
           <div class="row">
@@ -122,10 +126,11 @@
               <img src="assets/colors/blue-melancholic.png" alt="blue" id="blue" class="color-image">
             </div>
           </div>
+          <span class="btn btn-primary nxt-btn" id="show-nature-quiz">NEXT</span>
         </div>
       </div>
       <!-- Question four -->
-      <div class="form-group quiz-nature">
+      <div class="form-group quiz-nature" id="quiz-nature">
         <p for="">If asked, what would your friends and family say about you?</p>
         <div class="quiz-nature-questions row">
           <div class="col-3">
@@ -153,9 +158,10 @@
             </div>
           </div>
         </div>
+        <span class="btn btn-primary nxt-btn" id="show-game-quiz">NEXT</span>
       </div>
       <!-- Question five -->
-      <div class="form-group quiz-game">
+      <div class="form-group quiz-game" id="quiz-game">
         <p for="quiz-game"> What was your favorite game when you were a child?</p>
         <div class="quiz-games-images row">
           <div class="row">
@@ -179,14 +185,13 @@
             </div>
           </div>
         </div>
+        <!-- Submit btn -->
+        <button type="submit" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
       </div>
-      <!-- Submit btn -->
-      <button type="submit" class="btn btn-primary quiz-submit">SUBMIT</button>
     </form>
   </div>
   <!-- Result display -->
   <!-- Contact Us -->
-  <!--Beginning of contact us section-->
   <section id="contact">
     <div class="container">
       <div style="text-align: center;">
