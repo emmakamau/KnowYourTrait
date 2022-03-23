@@ -16,10 +16,22 @@ $(document).ready(function(){
 
     myUser.prototype.vacationChoice = function(){
         // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
-        $("img#beach").click(function(){melancholic++})
-        $("img#camping").click(function(){phlegmatic++})
-        $("img#mountains").click(function(){choleric++})
-        $("img#sanguins").click(function(){sanguin++})    
+        $("img#beach").click(function(){
+            melancholic = melancholic+1
+            console.log(melancholic)
+        })
+        $("img#camping").click(function(){
+            phlegmatic = phlegmatic+1
+            console.log(phlegmatic)
+        })
+        $("img#mountains").click(function(){
+            choleric = choleric+1
+            console.log(choleric)
+        })
+        $("img#sanguins").click(function(){
+            sanguin = sanguin+1
+            console.log(sanguin)
+        })    
     }
 
     myUser.prototype.colorQuestion = function(){
@@ -81,7 +93,7 @@ $(document).ready(function(){
     })
 
     $("img").click(function(){
-        alert("Selected")
+        
     })
 
     /*code to hide quiz until start test button is clicked*/
@@ -98,6 +110,16 @@ $(document).ready(function(){
         $("#quiz-name").hide()
         $("#quiz-vacation").show()
     })
+        $("#quiz-form").show();       
+
+    });
+
+/*code to hide quiz until the second start test button is clicked*/
+    $("#start-test2").click(function(){
+        $("#quiz-form").show();       
+
+    });
+
 
     $("#show-work-quiz").click(function(){
         $("#quiz-vacation").hide()
@@ -135,7 +157,17 @@ $(document).ready(function(){
         document.body.scrollTop=0;
         document.documentElement.scrollTop=0;
     }
-})
 
 
+let cardTotalNumber =(
+    $(".card").toArray().length
+  );
+  
+  for(let cardNumber = 1; cardNumber<=cardTotalNumber;cardNumber++ ){
+    $(`.card${cardNumber}`).click(function() {
+        $(`.card-show${cardNumber}`).toggle(400);
+        $(`.card-hidden${cardNumber}`).toggle(400);
+      });
+  }
+  
 
