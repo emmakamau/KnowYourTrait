@@ -173,6 +173,7 @@ p{text-align: center;}
   }
   .personality p{
     font-family: 'Indie Flower', cursive;    
+    font-weight: bold;
   }
 /* Form styling */
 .quiz-form{
@@ -262,10 +263,15 @@ p{text-align: center;}
   margin-left: 1060px;
   margin-top: 77px;
   color: purple ;
-
  
 }
 
-
+.header2{
+    font-weight: 900;    
+    font-family: 'Rock Salt', cursive;
+    padding-bottom: 2%;
+    color: purple;
+    text-align: center;
+}
 
 
