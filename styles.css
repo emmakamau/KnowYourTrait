@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Montserrat&family=Raleway&family=Rock+Salt&display=swap');
 /* To import the different fonts you will use;
 heading- font-family: 'Inspiration', cursive;
 body-font-family: 'Montserrat', sans-serif; */
@@ -116,6 +115,42 @@ body{
     padding: 1em;
 }
 p{text-align: center;}
+
+
+  .about {
+    padding: 0px 120px;
+    
+  }
+  .about h2 {
+    font-weight: 900;    
+    font-family: 'Rock Salt', cursive;
+    padding-bottom: 2%;
+    color: purple;
+    
+  }
+  .about p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; 
+  }
+
+  .card-hidden1,
+  .card-hidden2,
+  .card-hidden3 {
+    font-size: 20px;
+    display: none;
+  }
+  .personality {
+    margin-top: 20px;
+  }
+  .personality h2 {
+    margin-top: 18px;
+    font-weight: 800;
+    font-family: 'Rock Salt', cursive;
+    color: purple;
+  }
+  .personality img {
+    height: 100px;
+  }
 
 /* Form styling */
 .quiz-form{
