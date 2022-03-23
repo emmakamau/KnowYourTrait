@@ -1,5 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Indie+Flower&family=Montserrat&family=Rock+Salt&display=swap');
+
 
 /* To import the different fonts you will use;
 heading- font-family: 'Inspiration', cursive;
@@ -14,8 +16,7 @@ body-font-family: 'Montserrat', sans-serif; */
   body {
     height: 100%;
     width: 100%;    
-    overflow-x: hidden;
-         
+    overflow-x: hidden;     
   }
 
   li {
@@ -24,7 +25,7 @@ body-font-family: 'Montserrat', sans-serif; */
     font-size: 16px;
     color: black;
     text-decoration: none;    
-    margin-top: 17px;    
+    margin-top: 10px;    
   }
 
   a{
@@ -34,6 +35,7 @@ body-font-family: 'Montserrat', sans-serif; */
   color: black;
   text-decoration: none;
   margin-top: 1px;
+  margin-bottom: 14px;
   
   }
   button{
@@ -42,19 +44,33 @@ body-font-family: 'Montserrat', sans-serif; */
     font-size: 16px;    
     text-decoration: none;       
     }
+ #start-test2{
+    padding: 8px 25px;
+      background-color: rgb(37, 35, 35);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease os;
+      color: white;
+      margin-left: 46%;
+      margin-top: 20px;
+ }
 
-  header{
-      display:flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 10px 10% ;      
-      background:rgba(255,255,255, 0.6);
-     
-  }
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10% ;      
+    background:rgba(255,255,255, 0.6);
+    padding-top: 1px;  
+    padding-right: 5%;  
+    background:rgba(255,255,255, 0.6);     
+}
 
   .logo {
       cursor: pointer;
       margin-right: auto;
+      
   }
 
   .nav__links {
@@ -74,16 +90,16 @@ body-font-family: 'Montserrat', sans-serif; */
       color: #0088a9
   }
 
-  button{      
-      padding: 8px 25px;
-      background-color: rgba(0, 136, 169, 1);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease os;
-      color: white;
-      margin-left: 20px;
-  }
+button{      
+    padding: 8px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease os;
+    color: white;
+    margin-left: 20px;
+}
 
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
@@ -117,10 +133,76 @@ body{
 }
 p{text-align: center;}
 
+
+  .about {
+    padding: 0px 120px;
+    
+  }
+  .about h2 {
+    font-weight: 900;    
+    font-family: 'Rock Salt', cursive;
+    padding-bottom: 2%;
+    color: purple;
+    
+  }
+  .about p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; 
+  }
+
+  .card-hidden1,
+  .card-hidden2,
+  .card-hidden3 {
+    font-size: 20px;
+    display: none;
+  }
+  .personality {
+    margin-top: 20px;
+  }
+  .personality h2 {
+    margin-top: 18px;
+    font-weight: 800;
+    font-family: 'Rock Salt', cursive;
+    color: purple;
+  }
+  .personality h4 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    color: rgb(56, 45, 56);
+  }
+  .personality img {
+    height: 100px;
+  }
+  .personality p{
+    font-family: 'Indie Flower', cursive;    
+    font-weight: bold;
+  }
 /* Form styling */
+.quiz-intro{
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    font-size: 5vw;
+    padding-bottom: 2vh;
+    color: rgba(0, 136, 169, 1);
+    font-weight: bold;
+}
+
 .quiz-form{
     padding: 0 10vw;
 }
+
+.quiz-vacation, .quiz-name, .quiz-work, .quiz-color, .quiz-nature, .quiz-game{
+    display: none;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 .user-name{
     text-align: center;
@@ -141,11 +223,21 @@ p{text-align: center;}
     padding: 2vw;
 }
 
-.quiz-submit{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+.nxt-btn, .quiz-submit{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 30% !important;
+    margin-top: 4vh !important;
+    background-color: rgba(0, 136, 169, 1) !important;
+}
+
+#quiz-submit{
+    display: none;
+}
+
+.second-row{
+    margin-top: 4vh;
 }
 
 .vacation-image{
@@ -200,7 +292,14 @@ input[type=submit] {
 .row:after {
     content: "";
     display: table;
-    clear: both;
+    clear: both;  
+}
+.contact-us {
+    font-weight: 900;    
+    font-family: 'Rock Salt', cursive;
+    padding-bottom: 2%;
+    color: purple;
+    
 }
   #contact{
       background-color: azure;
@@ -237,6 +336,21 @@ input[type=submit] {
   
 
 
+/*Style the scroll button*/
+.fa-circle-arrow-up{
+  cursor: pointer;
+  margin-left: 1060px;
+  margin-top: 77px;
+  color: purple ;
+ 
+}
 
+.header2{
+    font-weight: 900;    
+    font-family: 'Rock Salt', cursive;
+    padding-bottom: 2%;
+    color: purple;
+    text-align: center;
+}
 
 
