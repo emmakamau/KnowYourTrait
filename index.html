@@ -3,7 +3,7 @@
 
 <head>
   <link rel="icon" href="assets/trait.png" sizes="48x48">
-  <title>&nbsp;KnowYourTrait</title>
+  <title>KnowYourTrait</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,8 +16,8 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/KYT logo.png" type="img/jpg">
   </head>
@@ -25,7 +25,7 @@
 <body>
   <!-- Landing section -->
   <header>
-    <img class="logo" src="assets/KYT logo.png" alt="logo" width="6%">
+    <img class="logo" src="assets/KYT logo.png" alt="logo" width="4%">
     <nav>
       <ul class="nav__links">
         <li><a href="#">Home</a></li>
@@ -41,175 +41,262 @@
       </div>
     </div>
   </div>
-  <!-- About Us -->
-  <!-- Description -->
-  <!-- Quiz Section -->
-  <div class="quiz-section">
-    <form class="quiz-form" id="quiz-form">
-      <div class="form-group quiz-name" id="quiz-name">
-        <h3 class="quiz-intro">Welcome to the Know Your Trait quiz extravaganza!</h3>
-        <p for="user-name">Name</p>
-        <input type="text" class="form-control" id="user-name" placeholder="Enter your name..">
-        <span class="btn btn-primary nxt-btn" id="show-vacation-quiz">NEXT</span>
-      </div>
-      <!-- Question one -->
-      <div class="form-group centered quiz-vacation" id="quiz-vacation">
-        <p for="quiz-name">What is your favorite vacation destination?</p>
-        <div class="quiz-vacation-images row">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach" value="roadtrip">
-            </div>
-            <div class="col-6">
-              <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountains">
-            </div>
-            <div class="col-6">
-              <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip">
-            </div>
-          </div>
-          <span class="btn btn-primary nxt-btn" id="show-work-quiz">NEXT</span>
-        </div>
-      </div>
-      <!-- Question two -->
-      <div class="form-group quiz-work" id="quiz-work">
-        <p for="quiz-work" id="quiz-work">If you face a problem at work, what is the first thing you do?</p>
-        <div class="quiz-work-questions">
-          <div class="row">
-            <div class="form-check col-6">
-              <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
-                value="phlegmatic">
-              <label class="form-check-label" for="work-question">Ask for help</label>
-            </div>
-            <div class="form-check col-6">
-              <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
-                value="melancholic">
-              <label class="form-check-label" for="work-question">Delegate the task to someone else</label>
-            </div>
-          </div>
-          <div class="row second-row">
-            <div class="form-check col-6">
-              <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
-                value="choleric">
-              <label class="form-check-label" for="work-question">Research potential solutions</label>
-            </div>
-            <div class="form-check col-6">
-              <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
-                value="sanguin">
-              <label class="form-check-label" for="work-question">Make excuses</label>
-            </div>
-          </div>
-          <span class="btn btn-primary nxt-btn" id="show-color-quiz">NEXT</span>
-        </div>
-      </div>
-      <!-- Question three -->
-      <div class="form-group quiz-color" id="quiz-color">
-        <p for="quiz-color">What is your favorite color?</p>
-        <div class="quiz-color-images">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/colors/green-phlegmatics.png" alt="green" id="green" class="color-image">
-            </div>
-            <div class="col-6">
-              <img src="assets/colors/red-choleric.png" alt="red" id="red" class="color-image">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/colors/yellow-sanguine.png" alt="yellow" id="yellow" class="color-image">
-            </div>
-            <div class="col-6">
-              <img src="assets/colors/blue-melancholic.png" alt="blue" id="blue" class="color-image">
-            </div>
-          </div>
-          <span class="btn btn-primary nxt-btn" id="show-nature-quiz">NEXT</span>
-        </div>
-      </div>
-      <!-- Question four -->
-      <div class="form-group quiz-nature" id="quiz-nature">
-        <p for="">If asked, what would your friends and family say about you?</p>
-        <div class="quiz-nature-questions row">
-          <div class="col-3">
-            <div class="form-check">
-              <input class="form-check-input nature-question" type="radio" name="nature-question" value="sanguin">
-              <label class="form-check-label" for="nature-question">Kind</label>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-check">
-              <input class="form-check-input nature-question" type="radio" name="nature-question" value="choleric">
-              <label class="form-check-label" for="nature-question">Smart</label>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-check">
-              <input class="form-check-input nature-question" type="radio" name="nature-question" value="phlegmatic">
-              <label class="form-check-label" for="nature-question">Caring</label>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="form-check">
-              <input class="form-check-input nature-question" type="radio" name="nature-question" value="melancholic">
-              <label class="form-check-label" for="nature-question">Quiet</label>
-            </div>
-          </div>
-        </div>
-        <span class="btn btn-primary nxt-btn" id="show-game-quiz">NEXT</span>
-      </div>
-      <!-- Question five -->
-      <div class="form-group quiz-game" id="quiz-game">
-        <p for="quiz-game"> What was your favorite game when you were a child?</p>
-        <div class="quiz-games-images row">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/games/gaming.jpeg" alt="gaming" id="gaming" class="game-image">
-              <!--Melancholic-->
-            </div>
-            <div class="col-6">
-              <img src="assets/games/scrabble.jpeg" alt="scrabble" id="scrabble" class="game-image">
-              <!--Phlegmatic-->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/games/twister.jpeg" alt="twister" id="twister" class="game-image">
-              <!--Sanguins-->
-            </div>
-            <div class="col-6">
-              <img src="assets/games/slot.jpeg" alt="chess" id="chess" class="game-image">
-              <!--Cholerics-->
-            </div>
-          </div>
-        </div>
-        <!-- Submit btn -->
-      <button type="submit" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
-      </div>
-      
-    </form>
+  <!-- Re-introducing the start test button  -->
+  <div>
+    <a class="cta" href="#quiz-form"><button id="start-test2">Start Test</button></a>
   </div>
-  <!-- Result display -->
-  <!-- Contact Us -->
+  <!-- About Us -->
+  <section id="About Us">
+    <div class="container about text-center my-5">
+      <h2 id="header2">About Us</h2>
+      <p class="pstyling">Have you noticed that over the years, many of the students
+        in institutions of higher learning end up not practicing in their areas of
+        expertise, costing the government and themselves time and money?
+      </p>
+      <p class="pstyling">Employers care about personality traits because they may
+        help anticipate how an employee will interact with others in the workplace.
+      </p>
+      <p class="pstyling">This is why our team came up with a KnowYourTrait system,
+        a personality quiz that allows the user to take an easy and fun test to get
+        to know their temperament.
+      </p>
+      <p class="pstyling">Understanding your personal attributes is a key part of
+        career development. An awareness of your personality traits and others’ can
+        help you do your best at work and result in enhanced workplace relationships
+        and career fulfillment!
+      </p>
+    </div>
+
+    <div class="container about text-center my-5">
+    </div>
+  </section>
+  <!-- Description -->
+  <div class="container-fluid personality text-center">
+    <h2 class="whatwe">Personality Traits</h2>
+    <div class="row my-3 text-center">
+      <div class="col-md-4">
+        <div class="card p-5 card1">
+          <div class="card-show1">
+            <img src="assets/icons/describe1.png" class="img-fluid" alt="design_icon" />
+            <h4>What are personality traits?</h4>
+          </div>
+
+          <div class="card-hidden1">
+            <p>
+              Personality traits are characteristics and qualities that
+              help define you as a unique individual. They’re often developed
+              throughout life and may remain consistent across many situations
+              and circumstances.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-5 card2">
+          <div class="card-show2">
+            <img src="assets/icons/describe2.png" class="img-fluid" alt="dev_icon" />
+            <h4>Why are they important?</h4>
+          </div>
+
+          <div class="card-hidden2">
+            <p>
+              Recognizing your personality traits is the first step in successfully
+              achieving your goals. Being able to capitalize on your strengths and
+              also understanding how to strengthen your weaknesses is the cornerstone
+              of success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-5 card3">
+          <div class="card-show3">
+            <img src="assets/icons/describe3.png" class="img-fluid" alt="product_icon" />
+            <h4>How can I know my personality trait?</h4>
+          </div>
+          <div class="card-hidden3">
+            <p>
+              What makes you the way you are? Take THIS TEST to discover your personality type.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quiz Section -->
+  <section id="quiz-sec">
+    <div class="quiz-section">
+      <form class="quiz-form" id="quiz-form">
+        <div class="form-group quiz-name" id="quiz-name">
+          <h3 class="quiz-intro">Welcome to the Know Your Trait quiz extravaganza!</h3>
+          <p for="user-name">Name</p>
+          <input type="text" class="form-control" id="user-name" placeholder="Enter your name..">
+          <span class="btn btn-primary nxt-btn" id="show-vacation-quiz">NEXT</span>
+        </div>
+        <!-- Question one -->
+        <div class="form-group centered quiz-vacation" id="quiz-vacation">
+          <div class="form-group centered quiz-vacation">
+            <h2 class="header2">Take the personality test</h2> <br>
+            <p for="quiz-name">What is your favorite vacation destination?</p>
+            <div class="quiz-vacation-images row">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach"
+                    value="roadtrip">
+                </div>
+                <div class="col-6">
+                  <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountains">
+                </div>
+                <div class="col-6">
+                  <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip">
+                </div>
+              </div>
+              <span class="btn btn-primary nxt-btn" id="show-work-quiz">NEXT</span>
+            </div>
+          </div>
+          <!-- Question two -->
+          <div class="form-group quiz-work" id="quiz-work">
+            <p for="quiz-work" id="quiz-work">If you face a problem at work, what is the first thing you do?</p>
+            <div class="quiz-work-questions">
+              <div class="row">
+                <div class="form-check col-6">
+                  <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
+                    value="phlegmatic">
+                  <label class="form-check-label" for="work-question">Ask for help</label>
+                </div>
+                <div class="form-check col-6">
+                  <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
+                    value="melancholic">
+                  <label class="form-check-label" for="work-question">Delegate the task to someone else</label>
+                </div>
+              </div>
+              <div class="row second-row">
+                <div class="form-check col-6">
+                  <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
+                    value="choleric">
+                  <label class="form-check-label" for="work-question">Research potential solutions</label>
+                </div>
+                <div class="form-check col-6">
+                  <input class="form-check-input work-question" type="radio" name="work-question" id="work-question"
+                    value="sanguin">
+                  <label class="form-check-label" for="work-question">Make excuses</label>
+                </div>
+              </div>
+              <span class="btn btn-primary nxt-btn" id="show-color-quiz">NEXT</span>
+            </div>
+          </div>
+          <!-- Question three -->
+          <div class="form-group quiz-color" id="quiz-color">
+            <p for="quiz-color">What is your favorite color?</p>
+            <div class="quiz-color-images">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/colors/green-phlegmatics.png" alt="green" id="green" class="color-image">
+                </div>
+                <div class="col-6">
+                  <img src="assets/colors/red-choleric.png" alt="red" id="red" class="color-image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/colors/yellow-sanguine.png" alt="yellow" id="yellow" class="color-image">
+                </div>
+                <div class="col-6">
+                  <img src="assets/colors/blue-melancholic.png" alt="blue" id="blue" class="color-image">
+                </div>
+              </div>
+              <span class="btn btn-primary nxt-btn" id="show-nature-quiz">NEXT</span>
+            </div>
+          </div>
+          <!-- Question four -->
+          <div class="form-group quiz-nature" id="quiz-nature">
+            <p for="">If asked, what would your friends and family say about you?</p>
+            <div class="quiz-nature-questions row">
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question" value="sanguin">
+                  <label class="form-check-label" for="nature-question">Kind</label>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question" value="choleric">
+                  <label class="form-check-label" for="nature-question">Smart</label>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question"
+                    value="phlegmatic">
+                  <label class="form-check-label" for="nature-question">Caring</label>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question"
+                    value="melancholic">
+                  <label class="form-check-label" for="nature-question">Quiet</label>
+                </div>
+              </div>
+            </div>
+            <span class="btn btn-primary nxt-btn" id="show-game-quiz">NEXT</span>
+          </div>
+          <!-- Question five -->
+          <div class="form-group quiz-game" id="quiz-game">
+            <p for="quiz-game"> What was your favorite game when you were a child?</p>
+            <div class="quiz-games-images row">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/games/gaming.jpeg" alt="gaming" id="gaming" class="game-image">
+                  <!--Melancholic-->
+                </div>
+                <div class="col-6">
+                  <img src="assets/games/scrabble.jpeg" alt="scrabble" id="scrabble" class="game-image">
+                  <!--Phlegmatic-->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/games/twister.jpeg" alt="twister" id="twister" class="game-image">
+                  <!--Sanguins-->
+                </div>
+                <div class="col-6">
+                  <img src="assets/games/slot.jpeg" alt="chess" id="chess" class="game-image">
+                  <!--Cholerics-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Submit btn -->
+          <button type="button" class="btn btn-primary quiz-submit">SUBMIT</button>
+      </form>
+  </section>
+  <!--End of quiz section-->
+
+
+  <!--Beginning of contact us section-->
   <section id="contact">
     <div class="container">
       <div style="text-align: center;">
-        <h2>stay connected with us</h2> <br>
+        <h2 class="contact-us">stay connected with us</h2> <br>
       </div>
       <div class="row" id="contact">
         <div class="column">
         </div>
         <div class="column">
-          <form action="">
+          <form action="/action_page.php">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your first name.."><br>
             <br>
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
             <br>
-            <label for="pnumber">Phone Number</label>
+            <label for="pnumber">Pnone Number</label>
             <input type="number" id="pnumber" name="phonenumber" placeholder="Your phone number.."> <br>
             <br>
             <label for="email address">Email</label>
@@ -222,6 +309,8 @@
     </div>
     </div>
   </section>
+
+
   <!-- jQuery link -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

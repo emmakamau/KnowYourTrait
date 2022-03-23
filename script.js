@@ -110,6 +110,16 @@ $(document).ready(function(){
         $("#quiz-name").hide()
         $("#quiz-vacation").show()
     })
+        $("#quiz-form").show();       
+
+    });
+
+/*code to hide quiz until the second start test button is clicked*/
+    $("#start-test2").click(function(){
+        $("#quiz-form").show();       
+
+    });
+
 
     $("#show-work-quiz").click(function(){
         $("#quiz-vacation").hide()
@@ -147,7 +157,17 @@ $(document).ready(function(){
         document.body.scrollTop=0;
         document.documentElement.scrollTop=0;
     }
-})
 
 
+let cardTotalNumber =(
+    $(".card").toArray().length
+  );
+  
+  for(let cardNumber = 1; cardNumber<=cardTotalNumber;cardNumber++ ){
+    $(`.card${cardNumber}`).click(function() {
+        $(`.card-show${cardNumber}`).toggle(400);
+        $(`.card-hidden${cardNumber}`).toggle(400);
+      });
+  }
+  
 
