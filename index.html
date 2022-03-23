@@ -152,19 +152,34 @@
           <div class="quiz-vacation-images row">
             <div class="row">
               <div class="col-6">
-                <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach"
-                  value="roadtrip">
+                <label for="beach-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="melancholic" checked>
+                  <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach-img">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping">
+                <label for="camping-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="phlegmatic">
+                  <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping-img">
+                </label>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountains">
+                <label for="mountain-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="choleric">
+                  <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountain-img">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip">
+                <label for="roadtrip-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="sanguin">
+                  <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip-img">
+                </label>
               </div>
             </div>
             <span class="btn btn-primary nxt-btn" id="show-work-quiz">NEXT</span>
@@ -207,18 +222,30 @@
           <div class="quiz-color-images">
             <div class="row">
               <div class="col-6">
-                <img src="assets/colors/green-phlegmatics.png" alt="green" id="green" class="color-image">
+                <label for="green">
+                  <input class="form-check-input color-question" type="radio" name="color-question" value="phlegmatic">
+                  <img src="assets/colors/green-phlegmatics.png" alt="green" id="green" class="color-image">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/colors/red-choleric.png" alt="red" id="red" class="color-image">
+                <label for="red">
+                  <input class="form-check-input color-question" type="radio" name="color-question" value="choleric">
+                  <img src="assets/colors/red-choleric.png" alt="red" id="red" class="color-image">
+                </label>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <img src="assets/colors/yellow-sanguine.png" alt="yellow" id="yellow" class="color-image">
+                <label for="yellow">
+                  <input class="form-check-input color-question" type="radio" name="color-question" value="sanguin">
+                  <img src="assets/colors/yellow-sanguine.png" alt="yellow" id="yellow" class="color-image">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/colors/blue-melancholic.png" alt="blue" id="blue" class="color-image">
+                <label for="blue">
+                  <input class="form-check-input color-question" type="radio" name="color-question" value="melancholic">
+                  <img src="assets/colors/blue-melancholic.png" alt="blue" id="blue" class="color-image">
+                </label>
               </div>
             </div>
             <span class="btn btn-primary nxt-btn" id="show-nature-quiz">NEXT</span>
@@ -261,27 +288,39 @@
           <div class="quiz-games-images row">
             <div class="row">
               <div class="col-6">
-                <img src="assets/games/gaming.jpeg" alt="gaming" id="gaming" class="game-image">
-                <!--Melancholic-->
+                <label for="gaming">
+                  <input class="form-check-input game-question" type="radio" name="game-question" value="melancholic">
+                  <img src="assets/games/gaming.jpeg" alt="gaming" id="gaming" class="game-image">
+                  <!--Melancholic-->
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/games/scrabble.jpeg" alt="scrabble" id="scrabble" class="game-image">
-                <!--Phlegmatic-->
+                <label for="scrabble">
+                  <input class="form-check-input game-question" type="radio" name="game-question" value="phlegmatic">
+                  <img src="assets/games/scrabble.jpeg" alt="scrabble" id="scrabble" class="game-image">
+                  <!--Phlegmatic-->
+                </label>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <img src="assets/games/twister.jpeg" alt="twister" id="twister" class="game-image">
-                <!--Sanguins-->
+                <label for="twister">
+                  <input class="form-check-input game-question" type="radio" name="game-question" value="sanguin">
+                  <img src="assets/games/twister.jpeg" alt="twister" id="twister" class="game-image">
+                  <!--Sanguins-->
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/games/slot.jpeg" alt="chess" id="chess" class="game-image">
-                <!--Cholerics-->
+                <label for="chess">
+                  <input class="form-check-input game-question" type="radio" name="game-question" value="choleric">
+                  <img src="assets/games/slot.jpeg" alt="chess" id="chess" class="game-image">
+                  <!--Cholerics-->
+                </label>
               </div>
             </div>
           </div>
           <!-- Submit btn -->
-          <button type="button" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
+          <button type="submit" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
         </div>
       </div>
       <!-- Submit btn -->
@@ -355,9 +394,6 @@
       </div>
     </div>
     </div>
-
-
-
 
     <!-- jQuery link -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

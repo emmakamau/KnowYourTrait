@@ -7,45 +7,50 @@ $(document).ready(function(){
     
     function myUser(userName){
         this.user = userName
-        this.vacationChoice
+        this.vacationQuestion
         this.workQuestion
         this.natureQuestion
         this.colorQuestion
         this.gameQuestion
     }
 
-    myUser.prototype.vacationChoice = function(){
-        // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
-        $("img#beach").click(function(){
-            melancholic = melancholic+1
-            console.log(melancholic)
-        })
-        $("img#camping").click(function(){
-            phlegmatic = phlegmatic+1
-            console.log(phlegmatic)
-        })
-        $("img#mountains").click(function(){
-            choleric = choleric+1
-            console.log(choleric)
-        })
-        $("img#sanguins").click(function(){
-            sanguin = sanguin+1
-            console.log(sanguin)
-        })    
+    myUser.prototype.vacationQuestion = function(){
+        var vacayChoice = $("input.vacation-question:checked").val()
+        if(vacayChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(vacayChoice === "melancholic"){
+            return melancholic++
+        }else if(vacayChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.colorQuestion = function(){
-        $("img#yellow").click(function(){sanguin++}) 
-        $("img#green").click(function(){phlegmatic++})
-        $("img#red").click(function(){choleric++})
-        $("img#blue").click(function(){melancholic++}) 
+        var colorChoice = $("input.color-question:checked").val()
+        if(colorChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(colorChoice === "melancholic"){
+            return melancholic++
+        }else if(colorChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.gameQuestion = function(){
-        $("img#gaming").click(function(){melancholic++})
-        $("img#scrabble").click(function(){phlegmatic++})
-        $("img#twister").click(function(){sanguins++})
-        $("img#chess").click(function(){cholerics++})
+        var gameChoice = $("input.game-question:checked").val()
+        if(gameChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(gameChoice === "melancholic"){
+            return melancholic++
+        }else if(gameChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.workQuestion = function(){
@@ -79,12 +84,13 @@ $(document).ready(function(){
         var userName = $("input#user-name").val()
 
         var newUser = new myUser(userName)
-        vacationChoice = newUser.vacationChoice()
+        vacationChoice = newUser.vacationQuestion()
         workQuestion = newUser.workQuestion()
         natureQuestion = newUser.natureQuestion()
         colorQuestion = newUser.colorQuestion()
         gameQuestion = newUser.gameQuestion()
 
+        console.log(`My name is ${userName}`)
         console.log("Sanguin", sanguin)
         console.log("Melancholic", melancholic)
         console.log("Choleric", choleric)
@@ -93,6 +99,7 @@ $(document).ready(function(){
     })
 
     $("img").click(function(){})
+    
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){

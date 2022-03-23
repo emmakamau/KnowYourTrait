@@ -249,12 +249,44 @@ input[type=submit] {
     margin-right: auto;
 }
 
+.vacation-question[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
+}
+
+.vacation-question[type=radio] + img {
+  cursor: pointer;
+}
+
+.vacation-question[type=radio]:checked + img{
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
+}
+
 .color-image{
     height: 20vh;
     width: 15vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.color-question[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
+}
+
+.color-question[type=radio] + img {
+  cursor: pointer;
+}
+
+.color-question[type=radio]:checked + img{
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
 }
 
 .game-image{
@@ -292,7 +324,32 @@ input[type=submit] {
 .row:after {
     content: "";
     display: table;
-    clear: both;  
+    clear: both;
+ }
+     
+ .game-question[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
+}
+
+.game-question[type=radio] + img {
+  cursor: pointer;
+}
+
+.game-question[type=radio]:checked + img{
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
+}
+
+input[type=submit]:hover {
+    background-color: brown;}
+
+#contact{
+    border-radius: 5px;
+    background-color:beige;
+    padding: 20px;
 }
 .contact-us {
     font-weight: 900;    
@@ -352,5 +409,6 @@ input[type=submit] {
     color: purple;
     text-align: center;
 }
+
 
 
