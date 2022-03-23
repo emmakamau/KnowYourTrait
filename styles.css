@@ -313,12 +313,15 @@ input[type=submit]:hover {
   font-weight: bold;
   line-height: 30px;
   font-family: 'Inspiration', cursive;
+  padding-bottom: 2%;
 
 }
 .path{
    text-align: center;
   font-family: 'Inspiration', cursive;
-  font-size: large;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 .list{
   font-family: 'Inspiration', cursive;
