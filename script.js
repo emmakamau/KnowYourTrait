@@ -16,22 +16,8 @@ $(document).ready(function(){
 
     myUser.prototype.vacationChoice = function(){
         // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
-        $("img#beach").click(function(){
-            melancholic = melancholic+1
-            console.log(melancholic)
-        })
-        $("img#camping").click(function(){
-            phlegmatic = phlegmatic+1
-            console.log(phlegmatic)
-        })
-        $("img#mountains").click(function(){
-            choleric = choleric+1
-            console.log(choleric)
-        })
-        $("img#sanguins").click(function(){
-            sanguin = sanguin+1
-            console.log(sanguin)
-        })    
+        var play = $("input.vacation-question:checked").val()
+        console.log(play)
     }
 
     myUser.prototype.colorQuestion = function(){
@@ -93,6 +79,7 @@ $(document).ready(function(){
     })
 
     $("img").click(function(){})
+    
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){

@@ -140,19 +140,35 @@
           <div class="quiz-vacation-images row">
             <div class="row">
               <div class="col-6">
-                <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach"
-                  value="roadtrip">
+                <label for="beach-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="melancholic" checked>
+                  <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach-img">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping">
+                <label for="camping-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="phlegmatic">
+                  <img src="assets/vacation/camping.jpeg" alt="camping-img" class="vacation-image" id="camping-img">
+                </label>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountains">
+                <label for="mountain-img">
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="choleric">
+                  <img src="assets/vacation/mountains.jpeg" alt="mountain-img" class="vacation-image" id="mountain-img">
+                </label>
               </div>
               <div class="col-6">
-                <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip">
+                <label for="roadtrip-img">
+
+                  <input class="form-check-input vacation-question" type="radio" name="vacation-question"
+                    value="sanguin">
+                  <img src="assets/vacation/roadtrip.jpeg" alt="roadtrip-img" class="vacation-image" id="roadtrip-img">
+                </label>
               </div>
             </div>
             <span class="btn btn-primary nxt-btn" id="show-work-quiz">NEXT</span>
@@ -269,7 +285,7 @@
             </div>
           </div>
           <!-- Submit btn -->
-          <button type="button" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
+          <button type="submit" class="btn btn-primary quiz-submit" id="quiz-submit">SUBMIT</button>
         </div>
       </form>
     </div>
@@ -308,9 +324,6 @@
       </div>
     </div>
     </div>
-
-
-
 
     <!-- jQuery link -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
