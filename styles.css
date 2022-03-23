@@ -173,10 +173,13 @@ p{text-align: center;}
     margin-left: auto;
     margin-right: auto;
 }
-
 .quiz-form{
     display: none;
-}input[type=submit] {
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type=submit] {
     background-color: purple;
     color: white;
     padding: 12px 20px;
@@ -187,11 +190,54 @@ p{text-align: center;}
   input[type=submit]:hover {
     background-color: brown;
 }
-.container {
-    border-radius: 5px;
-    background-color:beige;
-    padding: 20px;
+
+    
+
+/* .container { */
+    /* border-radius: 5px; */
+    /* padding: 20px; */
+/* } */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+  #wangui{
+      background-color: azure;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(./assets/download.jpeg);
+      
+      
+     } 
+    
+     .jackie{
+         color:hotpink;
+         font-weight: 5000;
+     }
+     input::placeholder {
+        color: black!important;
+        
+        
+
+     }
+     .contact-form{
+         margin-right:20px;
+     }
+    
+    
+         
+
+         
+    
+     
+ 
+  
+  
+  
+  
+
 
 
 
