@@ -129,7 +129,7 @@ p{text-align: center;}
     padding: 0 10vw;
 }
 
-.quiz-vacation, .quiz-name, .quiz-work, .quiz-color, .quiz-nature, .quiz-game, #quiz-submit{
+.quiz-vacation, .quiz-name, .quiz-work, .quiz-color, .quiz-nature, .quiz-game{
     display: none;
 }
 
@@ -161,21 +161,21 @@ input[type=submit] {
     padding: 2vw;
 }
 
-.quiz-submit{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+.nxt-btn, .quiz-submit{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 30% !important;
+    margin-top: 4vh !important;
     background-color: rgba(0, 136, 169, 1) !important;
 }
 
-.nxt-btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+#quiz-submit{
+    display: none;
+}
+
+.second-row{
     margin-top: 4vh;
-    background-color: rgba(0, 136, 169, 1) !important;
 }
 
 .vacation-image{

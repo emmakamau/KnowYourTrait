@@ -30,10 +30,7 @@ $(document).ready(function(){
     }
 
     myUser.prototype.gameQuestion = function(){
-        $("img#gaming").click(function(){
-            melancholic++ 
-            alert("what the hell")
-        })
+        $("img#gaming").click(function(){melancholic++})
         $("img#scrabble").click(function(){phlegmatic++})
         $("img#twister").click(function(){sanguins++})
         $("img#chess").click(function(){cholerics++})
@@ -81,6 +78,10 @@ $(document).ready(function(){
         console.log("Choleric", choleric)
         console.log("Phlegmatic", phlegmatic)
         alert(userName)
+    })
+
+    $("img").click(function(){
+        alert("Selected")
     })
 
     /*code to hide quiz until start test button is clicked*/
