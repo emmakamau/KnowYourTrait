@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Montserrat&display=swap');
 
 /* To import the different fonts you will use;
@@ -175,7 +176,34 @@ p{text-align: center;}
 
 .quiz-form{
     display: none;
+}input[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: brown;
 }
+#contact{
+    border-radius: 5px;
+    background-color:beige;
+    padding: 20px;
+    margin-top: 5%;
+
+   
+}
+.fa-circle-arrow-up{
+  cursor: pointer;
+  margin-left: 1060px;
+  margin-top: 77px;
+  color: purple ;
+
+ 
+}
+
 
 
 
