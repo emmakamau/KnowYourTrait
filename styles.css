@@ -202,7 +202,7 @@ input[type=submit] {
     display: table;
     clear: both;
 }
-  #wangui{
+  #contact{
       background-color: azure;
       background-repeat: no-repeat;
       background-size: cover;
@@ -212,10 +212,8 @@ input[type=submit] {
       
      } 
     
-     .jackie{
-         color:hotpink;
-         font-weight: 5000;
-     }
+    
+     
      input::placeholder {
         color: black!important;
         
