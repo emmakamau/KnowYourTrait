@@ -7,15 +7,14 @@ $(document).ready(function(){
     
     function myUser(userName){
         this.user = userName
-        this.vacationChoice
+        this.vacationQuestion
         this.workQuestion
         this.natureQuestion
         this.colorQuestion
         this.gameQuestion
     }
 
-    myUser.prototype.vacationChoice = function(){
-        // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
+    myUser.prototype.vacationQuestion = function(){
         var vacayChoice = $("input.vacation-question:checked").val()
         if(vacayChoice === "phlegmatic"){
             return phlegmatic++
@@ -29,11 +28,29 @@ $(document).ready(function(){
     }
 
     myUser.prototype.colorQuestion = function(){
-        
+        var colorChoice = $("input.color-question:checked").val()
+        if(colorChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(colorChoice === "melancholic"){
+            return melancholic++
+        }else if(colorChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.gameQuestion = function(){
-        
+        var gameChoice = $("input.game-question:checked").val()
+        if(gameChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(gameChoice === "melancholic"){
+            return melancholic++
+        }else if(gameChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.workQuestion = function(){
@@ -67,12 +84,13 @@ $(document).ready(function(){
         var userName = $("input#user-name").val()
 
         var newUser = new myUser(userName)
-        vacationChoice = newUser.vacationChoice()
+        vacationChoice = newUser.vacationQuestion()
         workQuestion = newUser.workQuestion()
         natureQuestion = newUser.natureQuestion()
         colorQuestion = newUser.colorQuestion()
         gameQuestion = newUser.gameQuestion()
 
+        console.log(`My name is ${userName}`)
         console.log("Sanguin", sanguin)
         console.log("Melancholic", melancholic)
         console.log("Choleric", choleric)
