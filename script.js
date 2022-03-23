@@ -86,7 +86,7 @@ $(document).ready(function(){
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
         $("#quiz-form").show();
-        $(window).scrollTop($('a#quiz-form').position().top);
+        //$(window).scrollTop($('a#quiz-form').position().top);
     });
 
     /* Adding functionality to Scroll button */
@@ -104,9 +104,7 @@ $(document).ready(function(){
         document.body.scrollTop=0;
         document.documentElement.scrollTop=0;
     }
-
     $('#quiz-work').click(function(){alert("Clicked me")})
-
 })
 
 
