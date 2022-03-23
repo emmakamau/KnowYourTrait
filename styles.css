@@ -156,6 +156,8 @@ p{text-align: center;}
 
 .vacation-image-selected{
     border: 2px solid blue;
+    height: 32vh;
+    width: 27vw;
 }
 
 .color-image{

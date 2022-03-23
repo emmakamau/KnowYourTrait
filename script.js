@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var sanguin = 0
     var choleric = 0
     var phlegmatic = 0
@@ -9,19 +10,50 @@ $(document).ready(function(){
         this.vacationChoice
         this.workQuestion
         this.natureQuestion
+        this.colorQuestion
+        this.gameQuestion
     }
 
     myUser.prototype.vacationChoice = function(){
         // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
-        $('img#beach').click(function(){return melancholic++ })  
-        $('img#camping').click(function(){return phlegmatic++})
-        $('img#mountains').click(function(){return choleric++})
-        $('img#roadtrip').click(function(){return sanguin++})
-            
+        $("img#beach").click(function(){melancholic++})
+        $("img#camping").click(function(){phlegmatic++})
+        $("img#mountains").click(function(){choleric++})
+        $("img#sanguins").click(function(){sanguin++})    
+    }
+
+    myUser.prototype.colorQuestion = function(){
+        $("img#yellow").click(function(){sanguin++}) 
+        $("img#green").click(function(){phlegmatic++})
+        $("img#red").click(function(){choleric++})
+        $("img#blue").click(function(){melancholic++}) 
+    }
+
+    myUser.prototype.gameQuestion = function(){
+        $("img#gaming").click(function(){
+            melancholic++ 
+            alert("what the hell")
+        })
+        $("img#scrabble").click(function(){phlegmatic++})
+        $("img#twister").click(function(){sanguins++})
+        $("img#chess").click(function(){cholerics++})
     }
 
     myUser.prototype.workQuestion = function(){
-        var selectedChoice = $("input.work-question:checked").val()
+        var workChoice = $("input.work-question:checked").val()
+        if(workChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(workChoice === "melancholic"){
+            return melancholic++
+        }else if(workChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
+    }
+
+    myUser.prototype.natureQuestion = function(){
+        var selectedChoice = $("input.nature-question:checked").val()
         if(selectedChoice === "phlegmatic"){
             return phlegmatic++
         }else if(selectedChoice === "melancholic"){
@@ -31,10 +63,6 @@ $(document).ready(function(){
         }else{
             return sanguin++
         }
-    }
-
-    myUser.prototype.natureQuestion = function(){
-        
     }
 
     $('#quiz-work').click(function(){alert("Clicked me")})
@@ -47,6 +75,9 @@ $(document).ready(function(){
         var newUser = new myUser(userName)
         vacationChoice = newUser.vacationChoice()
         workQuestion = newUser.workQuestion()
+        natureQuestion = newUser.natureQuestion()
+        colorQuestion = newUser.colorQuestion()
+        gameQuestion = newUser.gameQuestion()
 
         console.log("Sanguin", sanguin)
         console.log("Melancholic", melancholic)
