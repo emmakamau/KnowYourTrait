@@ -13,11 +13,15 @@ $(document).ready(function(){
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
-        $("#quiz-form").show();
-       
+        $("#quiz-form").show();       
 
     });
 
+/*code to hide quiz until the second start test button is clicked*/
+    $("#start-test2").click(function(){
+        $("#quiz-form").show();       
+
+    });
 })
 
 /* Adding functionality to Scroll button */
