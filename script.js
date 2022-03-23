@@ -86,28 +86,26 @@ $(document).ready(function(){
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
         $("#quiz-form").show();
-       
-
     });
 
-        /* Adding functionality to Scroll button */
-    const scrollButton=document.getElementById("scrollButton");
-    const goToTop=document.body.scrollTop;
-    window.onscroll=()=>{
-        if(goToTop>100 || document.documentElement.scrollTop>100){
-            scrollButton.style.display="block";
+    /* Adding functionality to Scroll button */
+    // const scrollButton=document.getElementById("scrollButton");
+    // const goToTop=document.body.scrollTop;
+    // window.onscroll=()=>{
+    //     if(goToTop>100 || document.documentElement.scrollTop>100){
+    //         scrollButton.style.display="block";
 
-        }else{
-            scrollButton.style.display="none"
-        }
-    };
+    //     }else{
+    //         scrollButton.style.display="none"
+    //     }
+    // };
 
-    scrollButton.onclick=()=>{
-        document.body.scrollTop=0;
-        document.documentElement.scrollTop=0;
-    }
+    // scrollButton.onclick=()=>{
+    //     document.body.scrollTop=0;
+    //     document.documentElement.scrollTop=0;
+    // }
 
-        $('#quiz-work').click(function(){alert("Clicked me")})
+    $('#quiz-work').click(function(){alert("Clicked me")})
 
 })
 
