@@ -346,6 +346,32 @@ input[type=submit]:hover {
     color: purple;
     text-align: center;
 }
+.results{
+  font-weight: 900;    
+  font-family: 'Rock Salt', cursive;
+  padding-bottom: 2%;
+  color: purple;
+  text-align: center;
+ 
+  
+}
+#results{
+  font-weight: bold;
+  line-height: 30px;
+  font-family: 'Inspiration', cursive;
+  padding-bottom: 2%;
 
+}
+.path{
+   text-align: center;
+  font-family: 'Inspiration', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.list{
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+}
 
 
