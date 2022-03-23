@@ -16,22 +16,24 @@ $(document).ready(function(){
 
     myUser.prototype.vacationChoice = function(){
         // Vacation Melancholic-Beach, Phlegmatic-Camping, Choleric-Mountains, Sanguins-Roadtrip
-        var play = $("input.vacation-question:checked").val()
-        console.log(play)
+        var vacayChoice = $("input.vacation-question:checked").val()
+        if(vacayChoice === "phlegmatic"){
+            return phlegmatic++
+        }else if(vacayChoice === "melancholic"){
+            return melancholic++
+        }else if(vacayChoice === "choleric"){
+            return choleric++
+        }else{
+            return sanguin++
+        }
     }
 
     myUser.prototype.colorQuestion = function(){
-        $("img#yellow").click(function(){sanguin++}) 
-        $("img#green").click(function(){phlegmatic++})
-        $("img#red").click(function(){choleric++})
-        $("img#blue").click(function(){melancholic++}) 
+        
     }
 
     myUser.prototype.gameQuestion = function(){
-        $("img#gaming").click(function(){melancholic++})
-        $("img#scrabble").click(function(){phlegmatic++})
-        $("img#twister").click(function(){sanguins++})
-        $("img#chess").click(function(){cholerics++})
+        
     }
 
     myUser.prototype.workQuestion = function(){

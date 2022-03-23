@@ -273,6 +273,22 @@ input[type=submit] {
     margin-right: auto;
 }
 
+.color-question[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
+}
+
+.color-question[type=radio] + img {
+  cursor: pointer;
+}
+
+.color-question[type=radio]:checked + img{
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
+}
+
 .game-image{
     height: 25vh;
     width: 25vw;
@@ -280,6 +296,22 @@ input[type=submit] {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.game-question[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
+}
+
+.game-question[type=radio] + img {
+  cursor: pointer;
+}
+
+.game-question[type=radio]:checked + img{
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
 }
 
 input[type=submit]:hover {
