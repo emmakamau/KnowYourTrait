@@ -92,55 +92,59 @@ $(document).ready(function(){
         alert(userName)
     })
 
-    $("img").click(function(){
-        
-    })
+    $("img").click(function(){})
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
         $("#quiz-name").show();
+        $("#start-test").hide()
+        $("#start-test2").hide()
+        $("#About-Us").hide()
+        $("#traits-desc").hide()
         $("#contact").hide()
         $("#landing-section").hide()
+        $("#quiz-submit").hide()
+       
+    });
+
+    /*code to hide quiz until the second start test button is clicked*/
+    $("#start-test2").click(function(){
+        $("#quiz-name").show();
         $("#start-test").hide()
-        //$(window).scrollTop($('a#quiz-form').position().top);
+        $("#start-test2").hide()
+        $("#About-Us").hide()
+        $("#traits-desc").hide()
+        $("#contact").hide()
+        $("#landing-section").hide()
+        $("#quiz-submit").hide()
     });
 
     /* Next btn hide and show different questions */
-    $("#show-vacation-quiz").click(function(){
-        $("#quiz-name").hide()
-        $("#quiz-vacation").show()
-    })
-        $("#quiz-form").show();       
+        $("#show-vacation-quiz").click(function(){
+            $("#quiz-name").hide()
+            $("#quiz-vacation").show();
+        })
 
-    });
+        $("#show-work-quiz").click(function(){
+            $("#quiz-vacation").hide()
+            $("#quiz-work").show()
+        })
 
-/*code to hide quiz until the second start test button is clicked*/
-    $("#start-test2").click(function(){
-        $("#quiz-form").show();       
+        $("#show-color-quiz").click(function(){
+            $("#quiz-work").hide()
+            $("#quiz-color").show()
+        })
 
-    });
+        $("#show-nature-quiz").click(function(){
+            $("#quiz-color").hide()
+            $("#quiz-nature").show()
+        })
 
-
-    $("#show-work-quiz").click(function(){
-        $("#quiz-vacation").hide()
-        $("#quiz-work").show()
-    })
-
-    $("#show-color-quiz").click(function(){
-        $("#quiz-work").hide()
-        $("#quiz-color").show()
-    })
-
-    $("#show-nature-quiz").click(function(){
-        $("#quiz-color").hide()
-        $("#quiz-nature").show()
-    })
-
-    $("#show-game-quiz").click(function(){
-        $("#quiz-nature").hide()
-        $("#quiz-game").show()
-        $("#quiz-submit").show()
-    })
+        $("#show-game-quiz").click(function(){
+            $("#quiz-nature").hide()
+            $("#quiz-game").show()
+            $("#quiz-submit").show()
+        })
 
     /* Adding functionality to Scroll button */
     const scrollButton=document.getElementById("scrollButton");
@@ -158,16 +162,20 @@ $(document).ready(function(){
         document.documentElement.scrollTop=0;
     }
 
+    //$(window).scrollTop($('a#quiz-form').position().top);
 
-let cardTotalNumber =(
-    $(".card").toArray().length
-  );
-  
-  for(let cardNumber = 1; cardNumber<=cardTotalNumber;cardNumber++ ){
-    $(`.card${cardNumber}`).click(function() {
-        $(`.card-show${cardNumber}`).toggle(400);
-        $(`.card-hidden${cardNumber}`).toggle(400);
-      });
+    //Toogle cards
+    let cardTotalNumber =($(".card").toArray().length);
+    
+    for(let cardNumber = 1; cardNumber<=cardTotalNumber;cardNumber++ ){
+        $(`.card${cardNumber}`).click(function() {
+            $(`.card-show${cardNumber}`).toggle(400);
+            $(`.card-hidden${cardNumber}`).toggle(400);
+        });
   }
+      
+
+});
+    
   
 
