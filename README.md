@@ -1,6 +1,6 @@
 # KnowYourTrait
 Web app that allows user to take a short quiz and return their personality traits and suggests best career paths.
-[Click to view](emmakamau.github.io/knowyourtrait/)
+[Click to view](https://emmakamau.github.io/KnowYourTrait/)
 
 ## Contributor
 1. Emmaculate Kamau
@@ -70,7 +70,6 @@ To fix a bug or enhance an existing module, follow these steps:
 ## Known Bugs
 
 If you find a bug or would like to request a new function, reach out to the development team via KYTdevs@gmail.com
-
 
 ## License
 
