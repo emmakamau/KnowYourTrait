@@ -423,15 +423,14 @@ input::placeholder {
 
 /* Results section */
 
-.results{
+.results, #user-name-display{
   font-weight: 900;    
   font-family: 'Rock Salt', cursive;
   padding-bottom: 2%;
   color: purple;
   text-align: center;
- 
-  
 }
+
 #results{
   font-weight: bold;
   line-height: 30px;
@@ -548,5 +547,6 @@ input::placeholder {
 
 
 #sanguin-result, #phlegmatic-result, #choleric-result, #melancholic-result{
+  margin-top: 6vh;
   display: none;
 }
