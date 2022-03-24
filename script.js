@@ -199,6 +199,22 @@ $(document).ready(function(){
       
 
 });
+
+/*Give submit button functionality */
+
+function sendMessage(){
+    let name1=document.getElementById("name1").value;
+    let email1=document.getElementById("email1").value;
+    let textarea1=document.getElementById("textarea1").value;
+
+    if(name1 !="" && email1 !="" && textarea1 !=""){
+        alert(`We have recieved your feedback ${name1} `)
+    }else{
+        alert("Please fill all the fields")
+    }
+    // document.querySelector("contact-form").reset();
+
+}
     
   
 

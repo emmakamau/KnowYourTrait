@@ -156,6 +156,20 @@ p{text-align: center;}
     font-size: 20px;
     display: none;
   }
+  .card-show1{
+   height: 139px;
+  }
+  .card-show3{
+    width: 140%;
+   
+  }
+  .card3-heading{
+    margin-left: -30%;
+  }
+  .describe3{
+    margin-left: -27%;
+  }
+
   .personality {
     margin-top: 20px;
   }
@@ -372,6 +386,12 @@ input::placeholder {
     margin-right:20px;
 }
 
+/* Styling for results */
+.results-section{
+  display: none;
+}
+ 
+
 /*Style the scroll button*/
 .fa-circle-arrow-up{
   cursor: pointer;
@@ -418,6 +438,115 @@ input::placeholder {
   padding-bottom: 2%;
 
 }
+.path{
+   text-align: center;
+  font-family: 'Inspiration', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.list{
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+}
+/*styling of contact section*/
+#contact{
+  margin-top: 3%;
+  background-color: white;
+}
+.contact-heading{
+  font-weight: 900;  
+  font-family: 'Rock Salt', cursive;
+  color: purple;
+  padding-bottom: 2%;
+  text-align: center;
+
+}
+.contact-form{
+  text-align: center;
+}
+.form-control{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  
+}
+input::placeholder {
+  color: purple !important;
+  opacity: 1;
+  }
+  .form-control::placeholder {
+    color: purple !important;
+    opacity: 1;
+    }
+    .submit-contactform{
+      background-color:black ;
+    }
+    .submit-contactform:hover{
+      background-color:transparent ;
+      border: 2px solid purple;
+      color:black;
+      letter-spacing: 8px;
+    }
+    .fa-phone{
+      animation:  icon 5s ease infinite;
+  }
+  @keyframes icon {
+      25%{
+          transform: translateY(-1.5rem);
+      }
+      50%{
+          transform: translateY(-1.5rem);
+      }
+      
+  }
+
+  .fa-circle-arrow-up{
+    margin-left: 130%;
+  }
+  .fa-circle-arrow-up:hover{
+   color: black;
+    
+  }
+  /* .popup{
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color:rgb(0, 136, 169, 1) ;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -230%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    padding: 0 30px 30px;
+  }
+
+  .popup img{
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    box-shadow:rgba(97, 12, 97, 0.8);
+    margin-bottom: 10%;
+  }
+  .popup button{
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 12px;
+
+  }
+  .popup button:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    
+  }
+   */
+
+
+
 
 #sanguin-result, #phlegmatic-result, #choleric-result, #melancholic-result{
   display: none !important;
