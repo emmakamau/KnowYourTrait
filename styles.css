@@ -516,8 +516,9 @@ input::placeholder {
 }
 
 .fa-circle-arrow-up{
-  float: right;
+  
   color: purple;
+  margin-left: 130%;
 }
 .fa-circle-arrow-up:hover{
   color: black;
