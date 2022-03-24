@@ -63,7 +63,6 @@ header{
   background:rgba(255,255,255, 0.6);
   padding-top: 1px;  
   padding-right: 5%;  
-  background:rgba(255,255,255, 0.6);     
 }
 
 .logo {
@@ -86,6 +85,35 @@ header{
 
 .nav__links li a:hover {
     color: #0088a9
+}
+
+.nav__links_2 li a:hover {
+  font-size: larger;
+}
+
+.nav__links_2 {
+  list-style: none;
+}
+
+.nav__links_2 li{
+  display:inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links_2 li a {
+  color: white;
+  transition: all 0.3s ease os;
+}
+
+.header-quiz{
+  background-color: rgba(0, 136, 169, 1);
+  color: white !important;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10% ;  
+  padding-top: 1px;  
+  padding-right: 5%;  
 }
 
 .button-main{      
@@ -211,6 +239,11 @@ p{
   display: none;
 }
 
+#user-name{
+  width: 50%;
+  margin: 2vh auto;
+}
+
 input[type=submit] {
   background-color: purple;
   color: white;
@@ -326,10 +359,26 @@ input[type=submit]:hover {
   background-color: brown;
 }
 
-/* .container { */
-  /* border-radius: 5px; */
-  /* padding: 20px; */
-/* } */
+.work-demo-img{
+  margin: 2vh 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 1s;
+}
+
+.demo-img-1,.demo-img-2,.demo-img-3,.demo-img-4{
+  height: 20vh;
+  width: 16vw;
+  padding: 0 2vw;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+
+.adjective-demo{
+  margin-top: 8vh;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -358,6 +407,7 @@ cursor: pointer;
   padding-bottom: 2%;
   color: purple;
   text-align: center;
+  margin-top: 4vh;
 }
 
 /* Results section */

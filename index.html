@@ -28,7 +28,7 @@
   <header id="home-section">
     <img class="logo" src="assets/KYT logo.png" alt="logo" width="4%">
     <nav id="navbar">
-      <ul class="nav__links">
+      <ul class="nav__links" id="nav-links">
         <li><a href="#navbar">Home</a></li>
         <li><a href="#About-Us">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
@@ -129,15 +129,15 @@
   <section id="quiz-sec">
     <div class="quiz-section">
       <form class="quiz-form" id="quiz-form">
-        <div class="form-group quiz-name" id="quiz-name">
-          <h2 class="header2">Take the personality test</h2> <br>
+        <div class="form-row align-items-center quiz-name" id="quiz-name">
+          <h2 class="header2 animate__animated  animate__jello">Take the personality test</h2> <br>
           <!-- <h3 class="quiz-intro">Welcome to the Know Your Trait quiz extravaganza!</h3> -->
           <p for="user-name">Name</p>
-          <input type="text" class="form-control" id="user-name" placeholder="Enter your name..">
+          <input type="text" class="form-control " id="user-name" placeholder="Enter your name..">
           <span class="btn btn-primary nxt-btn" id="show-vacation-quiz">NEXT</span>
         </div>
         <!-- Question one -->
-        <div class="form-group centered quiz-vacation" id="quiz-vacation">
+        <div class="form-group centered quiz-vacation animate__animated animate__fadeInDown" id="quiz-vacation">
           <p for="quiz-name">What is your favorite vacation destination?</p>
           <div class="quiz-vacation-questions">
             <div class="row">
@@ -176,7 +176,7 @@
           </div>
         </div>
         <!-- Question two -->
-        <div class="form-group quiz-work" id="quiz-work">
+        <div class="form-group quiz-work animate__animated animate__fadeInTopLeft" id="quiz-work">
           <p for="quiz-work" id="quiz-work">If you face a problem at work, what is the first thing you do?</p>
           <div class="quiz-work-questions">
             <div class="row">
@@ -203,11 +203,12 @@
                 <label class="form-check-label" for="work-question">Make excuses</label>
               </div>
             </div>
+            <span><img src="assets/work-demo.jpeg" alt="work-demo" class="work-demo-img animate__animated animate__backInDown"></span>
             <span class="btn btn-primary nxt-btn" id="show-color-quiz">NEXT</span>
           </div>
         </div>
         <!-- Question three -->
-        <div class="form-group quiz-color" id="quiz-color">
+        <div class="form-group quiz-color animate__animated animate__shakeX" id="quiz-color">
           <p for="quiz-color">What is your favorite color?</p>
           <div class="quiz-color-questions">
             <div class="row">
@@ -275,9 +276,23 @@
             </div>
           </div>
           <span class="btn btn-primary nxt-btn" id="show-game-quiz">NEXT</span>
+          <div class="adjective-demo">
+            <span class="adjective-demo-img">
+              <img src="assets/adjective-demo/kind.jpeg" alt="kind" class="demo-img-1 animate__animated animate__bounceInLeft animate__bounceOutRight">
+            </span>
+            <span class="adjective-demo-img">
+              <img src="assets/adjective-demo/smart.jpeg" alt="smart" class="demo-img-2 animate__animated animate__bounceInLeft animate__bounceOutRight">
+            </span>
+            <span class="adjective-demo-img">
+              <img src="assets/adjective-demo/caring.jpeg" alt="caring" class="demo-img-3 animate__animated animate__bounceInLeft animate__bounceOutRight">
+            </span>
+            <span class="adjective-demo-img">
+              <img src="assets/adjective-demo/quiet.png" alt="quiet" class="demo-img-4 animate__animated animate__bounceInLeft animate__bounceOutRight">
+            </span>
+          </div>
         </div>
         <!-- Question five -->
-        <div class="form-group quiz-game" id="quiz-game">
+        <div class="form-group quiz-game animate__animated animate__rubberBand" id="quiz-game">
           <p for="quiz-game"> What was your favorite game when you were a child?</p>
           <div class="quiz-games-questions">
             <div class="row">
@@ -346,56 +361,77 @@
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-melancholic" id="melancholic-result">
-      <h3 class="results animate__animated animate__fadeInLeftBig">
-        Hey <span class="user-name-display" id="user-name-melancholic"></span>, You're melancholic</h3>
-      <p id="results" class="animate__animated animate__wobble">
-        Melancholics often choose to hide their feelings,preferring to remain calm and quiet
-        even during events that typically elicit extreme joy or anger in others.
-        <br>They are process-oriented and like to pursue their goals in a precise and straightforward way.
-        <br>They are very calm and quiet desipite their powerful internal emotions
-      </p>
-      </p>
-      <ul class="list-items animate__animated animate__wobble">
-        <h5 class="path">Melancholics career path</h5>
-        <li class="list">Administration</li>
-        <li class="list">Social work</li>
-        <li class="list">Accounting</li>
-        <li class="list">Research</li>
-      </ul>
+      <div class="row">
+        <div class="col-6 result-display-info">
+          <h3 class="results animate__animated animate__fadeInLeftBig">
+            Hey <span class="user-name-display" id="user-name-melancholic"></span>, You're melancholic</h3>
+          <p id="results" class="animate__animated animate__wobble">
+            Melancholics often choose to hide their feelings,preferring to remain calm and quiet
+            even during events that typically elicit extreme joy or anger in others.
+            <br>They are process-oriented and like to pursue their goals in a precise and straightforward way.
+            <br>They are very calm and quiet desipite their powerful internal emotions
+          </p>
+          </p>
+          <ul class="list-items animate__animated animate__wobble">
+            <h5 class="path">Melancholics career path</h5>
+            <li class="list">Administration</li>
+            <li class="list">Social work</li>
+            <li class="list">Accounting</li>
+            <li class="list">Research</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <img src="assets/trait-images/melancholic.jpeg" alt="melancholic-img" class="trait-image-display">
+        </div>
+      </div>
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-phlegmatic" id="phlegmatic-result">
-      <h3 class="results animate__animated animate__fadeInLeftBig">
-        Hey <span class="user-name-display" id="user-name-phlegmatic"></span>, You're phlegmatic</h3>
-      <p id="results" class="animate__animated animate__wobble">
-        Phlegmatics always avoid conflict and always try to mediate between others to restore peace and harmony.<br>
-        They make it a point to preserve their relationships with old friends, distant family members, and
-        neighbors. <br>They are very much into charity and helping others. </p>
-      </p>
-      <ul class="list-items animate__animated animate__wobble">
-        <h5 class="path">Phlegmatics career path</h5>
-        <li class="list">Psychology or counseling</li>
-        <li class="list">Child development</li>
-        <li class="list">Social services</li>
-        <li class="list">Nursing</li>
-      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/trait-images/phlegmatic.jpeg" alt="melancholic-img" class="trait-image-display">
+        </div>
+        <div class="col-6 result-display-info">
+          <h3 class="results animate__animated animate__fadeInLeftBig">
+            Hey <span class="user-name-display" id="user-name-phlegmatic"></span>, You're phlegmatic</h3>
+          <p id="results" class="animate__animated animate__wobble">
+            Phlegmatics always avoid conflict and always try to mediate between others to restore peace and harmony.<br>
+            They make it a point to preserve their relationships with old friends, distant family members, and
+            neighbors. <br>They are very much into charity and helping others. </p>
+          </p>
+          <ul class="list-items animate__animated animate__wobble">
+            <h5 class="path">Phlegmatics career path</h5>
+            <li class="list">Psychology or counseling</li>
+            <li class="list">Child development</li>
+            <li class="list">Social services</li>
+            <li class="list">Nursing</li>
+          </ul>
+        </div>
+      </div>
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-choleric" id="choleric-result">
-      <h3 class="results animate__animated animate__fadeInDown">
-        Hey <span class="user-name-display" id="user-name-choleric"></span>, You're choleric</h3>
-      <p id="results" class="animate__animated animate__wobble">
-        Choleric do stuff according to what is convenient to them and what is in line with their goals.<br>
-        They are pragmatism and it is typical for them to take their decisions fast and act immediately. <br>
-        They are typically extroverted, goal oriented, and ambitious </p>
-      </p>
-      <ul class="list-items animate__animated animate__wobble">
-        <h5 class="path">Cholerics career path</h5>
-        <li class="list">Programming</li>
-        <li class="list">Management</li>
-        <li class="list">Engineering</li>
-        <li class="list">Statistics</li>
-      </ul>
+      <div class="row">
+        <div class="col-6 result-display-info">
+          <h3 class="results animate__animated animate__fadeInDown">
+            Hey <span class="user-name-display" id="user-name-choleric"></span>, You're choleric</h3>
+          <p id="results" class="animate__animated animate__wobble">
+            Choleric do stuff according to what is convenient to them and what is in line with their goals.<br>
+            They are pragmatism and it is typical for them to take their decisions fast and act immediately. <br>
+            They are typically extroverted, goal oriented, and ambitious </p>
+          </p>
+          <ul class="list-items animate__animated animate__wobble">
+            <h5 class="path">Cholerics career path</h5>
+            <li class="list">Programming</li>
+            <li class="list">Management</li>
+            <li class="list">Engineering</li>
+            <li class="list">Statistics</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <img src="assets/trait-images/choleric.jpeg" alt="melancholic-img" class="trait-image-display">
+        </div>
+      </div>
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
   </div>

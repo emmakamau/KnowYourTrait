@@ -123,6 +123,10 @@ $(document).ready(function(){
 
     /*code to hide quiz until start test button is clicked*/
     $("#start-test").click(function(){
+        $("#home-section").removeClass("header")
+        $("#home-section").addClass("header-quiz")
+        $("ul#nav-links").removeClass("nav__links")
+        $("ul#nav-links").addClass("nav__links_2")
         $("#quiz-name").show();
         $("#start-test").hide()
         $("#start-test2").hide()
