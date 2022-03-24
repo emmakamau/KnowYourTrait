@@ -128,7 +128,6 @@ $(document).ready(function(){
         $("#contact").hide()
         $("#landing-section").hide()
         $("#quiz-submit").hide()
-       
     });
 
     /*code to hide quiz until the second start test button is clicked*/
