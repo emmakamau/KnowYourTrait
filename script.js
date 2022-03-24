@@ -94,22 +94,19 @@ $(document).ready(function(){
         if(sanguin > melancholic && sanguin > phlegmatic && sanguin > choleric){
             $("#quiz-game").hide()
             $("#sanguin-result").show()
-            document.getElementById("user-name-display").innerHTML = userName
+            document.getElementById("user-name-sanguin").innerHTML = userName
         }else if(melancholic > sanguin && melancholic > phlegmatic && melancholic > choleric){
-            alert(`Hey ${userName}, You are a Melancholic`)
             $("div#melancholic-result").show()
             $("#quiz-game").hide()
-            document.getElementById("user-name-display").innerHTML = userName
+            document.getElementById("user-name-melancholic").innerHTML = userName
         }else if(phlegmatic > sanguin && phlegmatic > choleric && phlegmatic > melancholic){
-            alert(`Hey ${userName}, You are a Phlegmatic`)
             $("div#phlegmatic-result").show()
             $("#quiz-game").hide()
-            document.getElementById("user-name-display").innerHTML = userName
+            document.getElementById("user-name-phlegmatic").innerHTML = userName
         }else{
-            alert(`Hey ${userName}, You are a Choleric`)
             $("div#choleric-result").show()
             $("#quiz-game").hide()
-            document.getElementById("user-name-display").innerHTML = userName
+            document.getElementById("user-name-choleric").innerHTML = userName
         }
 
         console.log(`My name is ${userName}`)
@@ -217,8 +214,8 @@ function sendMessage(){
     // document.querySelector("contact-form").reset();
 }
 
-function displaySanguin(){
-    $("#sanguin-result").show()
+function refreshPage(){
+    location.reload()
 }
     
   
