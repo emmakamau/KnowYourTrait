@@ -353,38 +353,7 @@ input[type=submit] {
   box-shadow: 10px 10px rgba(0, 136, 169, 1);
 }
 
-input[type=submit]:hover {
-    background-color: brown;}
 
-#contact{
-    border-radius: 5px;
-    background-color:beige;
-    padding: 20px;
-}
-.contact-us {
-    font-weight: 900;    
-    font-family: 'Rock Salt', cursive;
-    padding-bottom: 2%;
-    color: purple;
-    
-}
-
-  #contact{
-      background-color: azure;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-image: url(./assets/download.jpeg);  
-} 
-
-input::placeholder {
-  color: black!important;
-
-}
-
-.contact-form{
-    margin-right:20px;
-}
 
 /* Styling for results */
 /* .results-section{
@@ -392,14 +361,6 @@ input::placeholder {
 }
   */
 
-/*Style the scroll button*/
-.fa-circle-arrow-up{
-  cursor: pointer;
-  margin-left: 1060px;
-  margin-top: 77px;
-  color: purple ;
- 
-}
 
 .header2{
     font-weight: 900;    
@@ -503,11 +464,13 @@ input::placeholder {
 
   .fa-circle-arrow-up{
     margin-left: 130%;
+    color: purple;
   }
   .fa-circle-arrow-up:hover{
    color: black;
     
-  }
+  }/*End of contact section*/
+  
   /* .popup{
     transform: translate(-50%, -50%);
     width: 400px;
