@@ -387,10 +387,10 @@ input::placeholder {
 }
 
 /* Styling for results */
-.results-section{
+/* .results-section{
   display: none;
 }
- 
+  */
 
 /*Style the scroll button*/
 .fa-circle-arrow-up{
@@ -547,8 +547,6 @@ input::placeholder {
    */
 
 
-
-
 #sanguin-result, #phlegmatic-result, #choleric-result, #melancholic-result{
-  display: none !important;
+  display: none;
 }

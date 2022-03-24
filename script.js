@@ -92,22 +92,21 @@ $(document).ready(function(){
         gameQuestion = newUser.gameQuestion()
 
         if(sanguin > melancholic && sanguin > phlegmatic && sanguin > choleric){
-            $("div#sanguin-result").show()
-            $("div#quiz-section").hide()
-            $("#contact").hide()
+            $("#quiz-game").hide()
+            $("#sanguin-result").show()
             alert(`Hey ${userName}, You are a Sanguin`)
         }else if(melancholic > sanguin && melancholic > phlegmatic && melancholic > choleric){
             alert(`Hey ${userName}, You are a Melancholic`)
             $("div#melancholic-result").show()
-            $("#contact").hide()
+            $("#quiz-game").hide()
         }else if(phlegmatic > sanguin && phlegmatic > choleric && phlegmatic > melancholic){
             alert(`Hey ${userName}, You are a Phlegmatic`)
             $("div#phlegmatic-result").show()
-            $("#contact").hide()
+            $("#quiz-game").hide()
         }else{
             alert(`Hey ${userName}, You are a Choleric`)
             $("div#choleric-result").show()
-            $("#contact").hide()
+            $("#quiz-game").hide()
         }
 
         console.log(`My name is ${userName}`)
@@ -213,7 +212,10 @@ function sendMessage(){
         alert("Please fill all the fields")
     }
     // document.querySelector("contact-form").reset();
+}
 
+function displaySanguin(){
+    $("#sanguin-result").show()
 }
     
   
