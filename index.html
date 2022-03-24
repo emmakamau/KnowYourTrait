@@ -20,13 +20,12 @@
 
   <!--Css link-->
   <link rel="stylesheet" href="styles.css">
- 
 
 </head>
 
 <body>
   <!-- Landing section -->
-  <header>
+  <header id="home-section">
     <img class="logo" src="assets/KYT logo.png" alt="logo" width="4%">
     <nav id="navbar">
       <ul class="nav__links">
@@ -140,7 +139,7 @@
         <!-- Question one -->
         <div class="form-group centered quiz-vacation" id="quiz-vacation">
           <p for="quiz-name">What is your favorite vacation destination?</p>
-          <div class="quiz-vacation-images row">
+          <div class="quiz-vacation-questions">
             <div class="row">
               <div class="col-6">
                 <label for="beach-img">
@@ -210,7 +209,7 @@
         <!-- Question three -->
         <div class="form-group quiz-color" id="quiz-color">
           <p for="quiz-color">What is your favorite color?</p>
-          <div class="quiz-color-images">
+          <div class="quiz-color-questions">
             <div class="row">
               <div class="col-6">
                 <label for="green">
@@ -245,29 +244,33 @@
         <!-- Question four -->
         <div class="form-group quiz-nature" id="quiz-nature">
           <p for="">If asked, what would your friends and family say about you?</p>
-          <div class="quiz-nature-questions row">
-            <div class="col-3">
-              <div class="form-check">
-                <input class="form-check-input nature-question" type="radio" name="nature-question" value="sanguin">
-                <label class="form-check-label" for="nature-question">Kind</label>
+          <div class="quiz-nature-questions">
+            <div class="row">
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question" value="sanguin">
+                  <label class="form-check-label" for="nature-question">Kind</label>
+                </div>
               </div>
-            </div>
-            <div class="col-3">
-              <div class="form-check">
-                <input class="form-check-input nature-question" type="radio" name="nature-question" value="choleric">
-                <label class="form-check-label" for="nature-question">Smart</label>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question" value="choleric">
+                  <label class="form-check-label" for="nature-question">Smart</label>
+                </div>
               </div>
-            </div>
-            <div class="col-3">
-              <div class="form-check">
-                <input class="form-check-input nature-question" type="radio" name="nature-question" value="phlegmatic">
-                <label class="form-check-label" for="nature-question">Caring</label>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question"
+                    value="phlegmatic">
+                  <label class="form-check-label" for="nature-question">Caring</label>
+                </div>
               </div>
-            </div>
-            <div class="col-3">
-              <div class="form-check">
-                <input class="form-check-input nature-question" type="radio" name="nature-question" value="melancholic">
-                <label class="form-check-label" for="nature-question">Quiet</label>
+              <div class="col-3">
+                <div class="form-check">
+                  <input class="form-check-input nature-question" type="radio" name="nature-question"
+                    value="melancholic">
+                  <label class="form-check-label" for="nature-question">Quiet</label>
+                </div>
               </div>
             </div>
           </div>
@@ -282,14 +285,12 @@
                 <label for="gaming">
                   <input class="form-check-input game-question" type="radio" name="game-question" value="melancholic">
                   <img src="assets/games/gaming.jpeg" alt="gaming" id="gaming" class="game-image">
-                  <!--Melancholic-->
                 </label>
               </div>
               <div class="col-6">
                 <label for="scrabble">
                   <input class="form-check-input game-question" type="radio" name="game-question" value="phlegmatic">
                   <img src="assets/games/scrabble.jpeg" alt="scrabble" id="scrabble" class="game-image">
-                  <!--Phlegmatic-->
                 </label>
               </div>
             </div>
@@ -298,14 +299,12 @@
                 <label for="twister">
                   <input class="form-check-input game-question" type="radio" name="game-question" value="sanguin">
                   <img src="assets/games/twister.jpeg" alt="twister" id="twister" class="game-image">
-                  <!--Sanguins-->
                 </label>
               </div>
               <div class="col-6">
                 <label for="chess">
                   <input class="form-check-input game-question" type="radio" name="game-question" value="choleric">
                   <img src="assets/games/slot.jpeg" alt="chess" id="chess" class="game-image">
-                  <!--Cholerics-->
                 </label>
               </div>
             </div>
@@ -317,11 +316,12 @@
     </div>
   </section>
   <!--End of quiz section-->
-    
+
   <!-- Result display -->
   <div class="results-section" id="results-section">
     <div class="container-sanguine" id="sanguin-result">
-      <h3 class="results animate__animated animate__bounce"><span class="user-name-display" id="user-name-sanguin"></span>, You're a sanguine</h3>
+      <h3 class="results animate__animated animate__bounce"><span class="user-name-display"
+          id="user-name-sanguin"></span>, You're a sanguine</h3>
       <p id="results">Sanguine are the most energetic and bubbly of all the temperament types. <br>They bring life and
         energy into a room by their very presence.<br>They are outgoing, handshaking, touching person. <br>They are
         the
@@ -334,7 +334,8 @@
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-melancholic" id="melancholic-result">
-      <h3 class="results animate__animated animate__fadeInLeftBig"><span class="user-name-display" id="user-name-melancholic"></span>, You're a melancholic</h3>
+      <h3 class="results animate__animated animate__fadeInLeftBig"><span class="user-name-display"
+          id="user-name-melancholic"></span>, You're a melancholic</h3>
       <p id="results">Melancholic often choose to hide their feelings, preferring to remain calm and quiet even during
         events that typically elicit extreme joy or anger in others.<br>They are process-oriented and like to pursue
         their
@@ -347,10 +348,11 @@
       <li class="list">Social work</li>
       <li class="list">Accounting</li>
       <li class="list">Research</li>
-      <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()" >Go back home</span>
+      <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-phlegmatic" id="phlegmatic-result">
-      <h3 class="results animate__animated animate__fadeInLeftBig"><span class="user-name-display" id="user-name-phlegmatic"></span>, You're a phlegmatic</h3>
+      <h3 class="results animate__animated animate__fadeInLeftBig"><span class="user-name-display"
+          id="user-name-phlegmatic"></span>, You're a phlegmatic</h3>
       <p id="results">Phlegmatic always avoid conflict and always try to mediate between others to restore peace and
         harmony.<br>They make it a point to preserve their relationships with old friends, distant family members, and
         neighbors. <br>They are very much into charity and helping others. </p>
@@ -363,7 +365,8 @@
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-choleric" id="choleric-result">
-      <h3 class="results animate__animated animate__fadeInDown"><span class="user-name-display" id="user-name-choleric"></span>, You're a choleric</h3>
+      <h3 class="results animate__animated animate__fadeInDown"><span class="user-name-display"
+          id="user-name-choleric"></span>, You're a choleric</h3>
       <p id="results"> Choleric do stuff according to what is convenient to them and what is in line with their
         goals.<br>
         They are pragmatism and it is typical for them to take their decisions fast and act immediately. <br>They are is
@@ -380,37 +383,32 @@
 
   <!--Beginning of contact us section-->
   <section id="contact">
+    <hr>
     <div class="container">
       <div class="row">
         <h1 class="contact-heading">contact us&nbsp; <i class="fas fa-phone"></i></h1>
         <div class="col-md-2"></div>
         <div class="col">
           <form class="contact-form">
-           <div class="mb-3">
-            <input type="text" class="form-control" id="name1" placeholder="Input your name here"required><br>
-            <input type="email" class="form-control" id="email1" placeholder="Input your email here" required><br>
-           </div>
-           <div class="mb-3">
-             
-             <textarea class="form-control" id="textarea1" rows="6" placeholder="Write your message...." required></textarea><br>
-           </div>
-           <button class="submit-contactform" onclick="sendMessage()">Send Message</button>
-           <i class="fa-solid fa-circle-arrow-up fa-2x" id="scrollButton"></i>
-   
+            <div class="mb-3">
+              <input type="text" class="form-control contact-form-style" id="name1" placeholder="Name e.g Jane Doe"
+                required><br>
+              <input type="email" class="form-control contact-form-style" id="email1"
+                placeholder="Email e.g janedoe@example.com" required><br>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control contact-form-style" id="textarea1" rows="6"
+                placeholder="Write your message...." required></textarea><br>
+            </div>
+            <button class="button-main" id="send-msg" onclick="sendMessage()">Send Message</button>
+            <i class="fa-solid fa-circle-arrow-up fa-2x" id="scrollButton"></i>
           </form>
-   
         </div>
         <div class="col-md-2"></div>
-   
       </div>
-
     </div>
-  
   </section>
   <!--End of contact section-->
-
- 
-  
 
   <!-- jQuery link -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

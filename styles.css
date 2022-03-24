@@ -1,34 +1,39 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Indie+Flower&family=Montserrat&family=Rock+Salt&display=swap');
-
 
 /* To import the different fonts you will use;
 heading- font-family: 'Inspiration', cursive;
 body-font-family: 'Montserrat', sans-serif; */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100%;
-    width: 100%;    
-    overflow-x: hidden;     
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  li {
-    font-family: 'Montserrat', sans-serif;  
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;    
-    margin-top: 10px;    
-  }
+body {
+  height: 100%;
+  width: 100%;    
+  overflow-x: hidden;     
+}
 
-  a{
+hr{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;    
+  margin-top: 10px;    
+}
+
+a{
   font-family: 'Montserrat', sans-serif;  
   font-weight: bold; 
   font-size: 16px;
@@ -36,59 +41,52 @@ body-font-family: 'Montserrat', sans-serif; */
   text-decoration: none;
   margin-top: 1px;
   margin-bottom: 14px;
-  
-  }
-  button{
-    font-family: 'Montserrat', sans-serif;  
-    font-weight: bold; 
-    font-size: 16px;    
-    text-decoration: none;       
-    }
- #start-test2{
-    padding: 8px 25px;
-      background-color: rgb(37, 35, 35);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease os;
-      color: white;
-      margin-left: 46%;
-      margin-top: 20px;
- }
-
-header{
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 10% ;      
-    background:rgba(255,255,255, 0.6);
-    padding-top: 1px;  
-    padding-right: 5%;  
-    background:rgba(255,255,255, 0.6);     
 }
 
-  .logo {
-      cursor: pointer;
-      margin-right: auto;
-      
-  }
+#start-test2{
+  padding: 8px 25px;
+  background-color: rgb(37, 35, 35);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease os;
+  color: white;
+  margin-left: 46%;
+  margin-top: 20px;
+}
 
-  .nav__links {
-      list-style: none;
-  }
+header{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10% ;      
+  background:rgba(255,255,255, 0.6);
+  padding-top: 1px;  
+  padding-right: 5%;  
+  background:rgba(255,255,255, 0.6);     
+}
 
-  .nav__links li{
-      display:inline-block;
-      padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-      transition: all 0.3s ease os;
-  }
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
 
-  .nav__links li a:hover {
-      color: #0088a9
-  }
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease os;
+}
+
+.nav__links li a:hover {
+    color: #0088a9
+}
 
 .button-main{      
   padding: 8px 25px;
@@ -102,165 +100,165 @@ header{
 }
 
 .button-main:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-    border: 2px solid black;
-    
+  background-color: rgba(0, 136, 169, 0.8);
+  border: 2px solid black;
 }
+
 .container-fluid-main{
-    padding-top: 30%;
-    margin-top: 30%;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  .header {
-    height: 95vh;
-    background-image: url(assets/Header-Image.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-
-body{
-    box-sizing: border-box;
-    padding: 1em;
+  padding-top: 30%;
+  margin-top: 30%;
+  font-family: 'Raleway', sans-serif;
 }
-p{text-align: center;}
 
+.header {
+  height: 95vh;
+  background-image: url(assets/Header-Image.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-  .about {
-    padding: 0px 120px;
-    
-  }
-  .about h2 {
-    font-weight: 900;    
-    font-family: 'Rock Salt', cursive;
-    padding-bottom: 2%;
-    color: purple;
-    
-  }
-  .about p {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif; 
-  }
+p{
+  text-align: center;
+}
 
-  .card-hidden1,
-  .card-hidden2,
-  .card-hidden3 {
-    font-size: 20px;
-    display: none;
-  }
-  .card-show1{
-   height: 139px;
-  }
-  .card-show3{
-    width: 140%;
-   
-  }
-  .card3-heading{
-    margin-left: -30%;
-  }
-  .describe3{
-    margin-left: -27%;
-  }
+.about {
+  padding: 0px 120px;
+  
+}
+.about h2 {
+  font-weight: 900;    
+  font-family: 'Rock Salt', cursive;
+  padding-bottom: 2%;
+  color: purple;
+}
 
-  .personality {
-    margin-top: 20px;
-  }
-  .personality h2 {
-    margin-top: 18px;
-    font-weight: 800;
-    font-family: 'Rock Salt', cursive;
-    color: purple;
-  }
-  .personality h4 {
-    font-family: 'Indie Flower', cursive;
-    font-weight: bold;
-    color: rgb(56, 45, 56);
-  }
-  .personality img {
-    height: 100px;
-  }
-  .personality p{
-    font-family: 'Indie Flower', cursive;    
-    font-weight: bold;
-  }
+.about p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.card-hidden1,
+.card-hidden2,
+.card-hidden3 {
+  font-size: 20px;
+  display: none;
+}
+
+.card-show1{
+  height: 139px;
+}
+
+.card-show3{
+  width: 140%;
+}
+
+.card3-heading{
+  margin-left: -30%;
+}
+
+.describe3{
+  margin-left: -27%;
+}
+
+.personality {
+  margin-top: 20px;
+}
+
+.personality h2 {
+  margin-top: 18px;
+  font-weight: 800;
+  font-family: 'Rock Salt', cursive;
+  color: purple;
+}
+
+.personality h4 {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: rgb(56, 45, 56);
+}
+
+.personality img {
+  height: 100px;
+}
+
+.personality p{
+  font-family: 'Indie Flower', cursive;    
+  font-weight: bold;
+}
+
 /* Form styling */
 .quiz-intro{
-    text-align: center;
-    font-family: 'Inspiration', cursive;
-    font-size: 5vw;
-    padding-bottom: 2vh;
-    color: rgba(0, 136, 169, 1);
-    font-weight: bold;
+  text-align: center;
+  font-family: 'Inspiration', cursive;
+  font-size: 5vw;
+  padding-bottom: 2vh;
+  color: rgba(0, 136, 169, 1);
+  font-weight: bold;
 }
 
 .quiz-form{
-    padding: 0 10vw;
+  padding: 0 10vw;
 }
 
 .quiz-vacation, .quiz-name, .quiz-work, .quiz-color, .quiz-nature, .quiz-game{
-    display: none;
+  display: none;
 }
 
 input[type=submit] {
-    background-color: purple;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-.user-name{
-    text-align: center;
+  background-color: purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-group{
-    margin: 6vh;
+  margin: 6vh;
 }
 
-.quiz-work-questions{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+.quiz-work-questions, .quiz-color-questions, .quiz-vacation-questions, .quiz-nature-questions{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .quiz-nature-questions{
-    padding: 2vw;
+  padding: 2vw;
 }
 
 .nxt-btn, .quiz-submit{
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 30% !important;
-    margin-top: 4vh !important;
-    background-color: rgba(0, 136, 169, 1) !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 30% !important;
+  margin-top: 4vh !important;
+  background-color: rgba(0, 136, 169, 1) !important;
 }
 
 #quiz-submit{
-    display: none;
+  display: none;
 }
 
 .second-row{
-    margin-top: 4vh;
+  margin-top: 4vh;
 }
 
 .vacation-image{
-    height: 30vh;
-    width: 25vw;
-    padding: 1vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 30vh;
+  width: 25vw;
+  padding: 1vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .vacation-question[type=radio] { 
@@ -271,7 +269,7 @@ input[type=submit] {
 }
 
 .vacation-question[type=radio] + img {
-  cursor: pointer;
+cursor: pointer;
 }
 
 .vacation-question[type=radio]:checked + img{
@@ -280,11 +278,11 @@ input[type=submit] {
 }
 
 .color-image{
-    height: 20vh;
-    width: 15vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 20vh;
+  width: 15vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .color-question[type=radio] { 
@@ -295,7 +293,7 @@ input[type=submit] {
 }
 
 .color-question[type=radio] + img {
-  cursor: pointer;
+cursor: pointer;
 }
 
 .color-question[type=radio]:checked + img{
@@ -304,164 +302,172 @@ input[type=submit] {
 }
 
 .game-image{
-    height: 25vh;
-    width: 25vw;
-    padding: 1vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 25vh;
+  width: 25vw;
+  padding: 1vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 input[type=submit] {
-    background-color: purple;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: brown;
+  background-color: purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: brown;
 }
 
 /* .container { */
-    /* border-radius: 5px; */
-    /* padding: 20px; */
+  /* border-radius: 5px; */
+  /* padding: 20px; */
 /* } */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
- }
-     
- .game-question[type=radio] { 
-  position: absolute;
-  opacity: 0;
-  width: 25vw;
-  height: 30vh;
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+.game-question[type=radio] { 
+position: absolute;
+opacity: 0;
+width: 25vw;
+height: 30vh;
 }
 
 .game-question[type=radio] + img {
-  cursor: pointer;
+cursor: pointer;
 }
 
 .game-question[type=radio]:checked + img{
-  outline: 2px solid rgba(0, 136, 169, 1);
-  box-shadow: 10px 10px rgba(0, 136, 169, 1);
+outline: 2px solid rgba(0, 136, 169, 1);
+box-shadow: 10px 10px rgba(0, 136, 169, 1);
 }
 
 .header2{
-    font-weight: 900;    
-    font-family: 'Rock Salt', cursive;
-    padding-bottom: 2%;
-    color: purple;
-    text-align: center;
-}
-
-.path{
-   text-align: center;
-  font-family: 'Inspiration', cursive;
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-.list{
-  font-family: 'Inspiration', cursive;
-  text-align: center;
-}
-
-/* Results section */
-
-.results, .user-name-display{
   font-weight: 900;    
   font-family: 'Rock Salt', cursive;
   padding-bottom: 2%;
   color: purple;
   text-align: center;
-  
+}
+
+.path{
+  text-align: center;
+font-family: 'Inspiration', cursive;
+font-size: 20px;
+font-weight: bold;
+
+}
+.list{
+font-family: 'Inspiration', cursive;
+text-align: center;
+}
+
+/* Results section */
+
+.results, .user-name-display{
+font-weight: 900;    
+font-family: 'Rock Salt', cursive;
+padding-bottom: 2%;
+color: purple;
+text-align: center;
+
 }
 
 #results{
-  font-weight: bold;
-  line-height: 30px;
-  font-family: 'Inspiration', cursive;
-  padding-bottom: 2%;
+font-weight: bold;
+line-height: 30px;
+font-family: 'Inspiration', cursive;
+padding-bottom: 2%;
 
 }
 .path{
-   text-align: center;
-  font-family: 'Inspiration', cursive;
-  font-size: 20px;
-  font-weight: bold;
-  
+  text-align: center;
+font-family: 'Inspiration', cursive;
+font-size: 20px;
+font-weight: bold;
+
 }
 .list{
-  font-family: 'Inspiration', cursive;
-  text-align: center;
+font-family: 'Inspiration', cursive;
+text-align: center;
 }
 /*styling of contact section*/
 #contact{
   margin-top: 3%;
   background-color: white;
+  margin-bottom: 2em;
 }
+
 .contact-heading{
   font-weight: 900;  
   font-family: 'Rock Salt', cursive;
   color: purple;
   padding-bottom: 2%;
   text-align: center;
+}
 
+.contact-form-style{
+  border-color: purple !important;
+}
+
+#send-msg{
+  background-color: purple !important;
 }
 .contact-form{
   text-align: center;
 }
+
 .form-control{
-  border: 2px solid black;
+  border: 2px solid purple;
   border-radius: 20px;
   background-color: transparent;
-  
 }
+
 input::placeholder {
   color: purple !important;
-  opacity: 1;
-  }
-  .form-control::placeholder {
-    color: purple !important;
-    opacity: 1;
-    }
-    .submit-contactform{
-      background-color:black ;
-    }
-    .submit-contactform:hover{
-      background-color:transparent ;
-      border: 2px solid purple;
-      color:black;
-      letter-spacing: 8px;
-    }
-    .fa-phone{
-      animation:  icon 5s ease infinite;
-  }
-  @keyframes icon {
-      25%{
-          transform: translateY(-1.5rem);
-      }
-      50%{
-          transform: translateY(-1.5rem);
-      }
-      
-  }
+  opacity: 0.6 !important;
+}
 
-  .fa-circle-arrow-up{
-    margin-left: 130%;
-    color: purple;
-  }
-  .fa-circle-arrow-up:hover{
-   color: black;
-    
-  }
+.form-control::placeholder {
+  color: purple !important;
+  opacity: 0.6 !important;
+}
+
+.submit-contactform{
+  background-color:black ;
+}
+
+.fa-phone{
+  animation:  icon 5s ease infinite;
+}
+
+@keyframes icon {
+    25%{
+        transform: translateY(-1.5rem);
+    }
+    50%{
+        transform: translateY(-1.5rem);
+    }
+}
+
+.fa-circle-arrow-up{
+  float: right;
+  color: purple;
+}
+.fa-circle-arrow-up:hover{
+  color: black;
+  
+}
 
 #sanguin-result, #phlegmatic-result, #choleric-result, #melancholic-result{
   margin-top: 6vh;
