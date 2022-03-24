@@ -81,39 +81,43 @@ $(document).ready(function(){
     }
     $("form#quiz-form").submit(function(event){
         event.preventDefault()
-        
-        userName = $("input#user-name").val()
+        if($(".game-question").is(":checked")){
 
-        var newUser = new myUser(userName)
-        vacationChoice = newUser.vacationQuestion()
-        workQuestion = newUser.workQuestion()
-        natureQuestion = newUser.natureQuestion()
-        colorQuestion = newUser.colorQuestion()
-        gameQuestion = newUser.gameQuestion()
+            userName = $("input#user-name").val()
 
-        if(sanguin > melancholic && sanguin > phlegmatic && sanguin > choleric){
-            $("#quiz-game").hide()
-            $("#sanguin-result").show()
-            document.getElementById("user-name-sanguin").innerHTML = userName
-        }else if(melancholic > sanguin && melancholic > phlegmatic && melancholic > choleric){
-            $("div#melancholic-result").show()
-            $("#quiz-game").hide()
-            document.getElementById("user-name-melancholic").innerHTML = userName
-        }else if(phlegmatic > sanguin && phlegmatic > choleric && phlegmatic > melancholic){
-            $("div#phlegmatic-result").show()
-            $("#quiz-game").hide()
-            document.getElementById("user-name-phlegmatic").innerHTML = userName
+            var newUser = new myUser(userName)
+            vacationChoice = newUser.vacationQuestion()
+            workQuestion = newUser.workQuestion()
+            natureQuestion = newUser.natureQuestion()
+            colorQuestion = newUser.colorQuestion()
+            gameQuestion = newUser.gameQuestion()
+
+            if(sanguin > melancholic && sanguin > phlegmatic && sanguin > choleric){
+                $("#quiz-game").hide()
+                $("#sanguin-result").show()
+                document.getElementById("user-name-sanguin").innerHTML = userName
+            }else if(melancholic > sanguin && melancholic > phlegmatic && melancholic > choleric){
+                $("div#melancholic-result").show()
+                $("#quiz-game").hide()
+                document.getElementById("user-name-melancholic").innerHTML = userName
+            }else if(phlegmatic > sanguin && phlegmatic > choleric && phlegmatic > melancholic){
+                $("div#phlegmatic-result").show()
+                $("#quiz-game").hide()
+                document.getElementById("user-name-phlegmatic").innerHTML = userName
+            }else{
+                $("div#choleric-result").show()
+                $("#quiz-game").hide()
+                document.getElementById("user-name-choleric").innerHTML = userName
+            }
+
+            console.log(`My name is ${userName}`)
+            console.log("Sanguin", sanguin)
+            console.log("Melancholic", melancholic)
+            console.log("Choleric", choleric)
+            console.log("Phlegmatic", phlegmatic)
         }else{
-            $("div#choleric-result").show()
-            $("#quiz-game").hide()
-            document.getElementById("user-name-choleric").innerHTML = userName
+            alert("Pick your favourite childhood game.")
         }
-
-        console.log(`My name is ${userName}`)
-        console.log("Sanguin", sanguin)
-        console.log("Melancholic", melancholic)
-        console.log("Choleric", choleric)
-        console.log("Phlegmatic", phlegmatic)
     })
     
 
@@ -143,29 +147,50 @@ $(document).ready(function(){
 
     /* Next btn hide and show different questions */
         $("#show-vacation-quiz").click(function(){
-            $("#quiz-name").hide()
-            $("#quiz-vacation").show();
+            if($("#user-name").val() !== ""){
+                $("#quiz-name").hide()
+                $("#quiz-vacation").show();
+            }else{
+                alert("User name cannot be empty.")
+            } 
         })
 
         $("#show-work-quiz").click(function(){
-            $("#quiz-vacation").hide()
-            $("#quiz-work").show()
+            if($(".vacation-question").is(":checked")){
+                $("#quiz-vacation").hide()
+                $("#quiz-work").show()
+            }else{
+                alert("You did not choose a vacation destination of your choice!")
+            }
         })
 
         $("#show-color-quiz").click(function(){
-            $("#quiz-work").hide()
-            $("#quiz-color").show()
+            if($(".work-question").is(":checked")){
+                $("#quiz-work").hide()
+                $("#quiz-color").show()
+            }else{
+                alert("Select a choice.")
+            }
         })
 
         $("#show-nature-quiz").click(function(){
-            $("#quiz-color").hide()
-            $("#quiz-nature").show()
+            if($(".color-question").is(":checked")){
+                $("#quiz-color").hide()
+                $("#quiz-nature").show()
+            }else{
+                alert("Pick a color.")
+            }
+            
         })
 
         $("#show-game-quiz").click(function(){
-            $("#quiz-nature").hide()
-            $("#quiz-game").show()
-            $("#quiz-submit").show()
+            if($(".nature-question").is(":checked")){
+                $("#quiz-nature").hide()
+                $("#quiz-game").show()
+                $("#quiz-submit").show()
+            }else{
+                alert("Select a choice")
+            }
         })
 
     /* Adding functionality to Scroll button */

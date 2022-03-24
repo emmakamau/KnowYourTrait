@@ -144,7 +144,7 @@
               <div class="col-6">
                 <label for="beach-img">
                   <input class="form-check-input vacation-question" type="radio" name="vacation-question"
-                    value="melancholic" checked>
+                    value="melancholic">
                   <img src="assets/vacation/beach.jpeg" alt="beach-img" class="vacation-image" id="beach-img">
                 </label>
               </div>
@@ -279,7 +279,7 @@
         <!-- Question five -->
         <div class="form-group quiz-game" id="quiz-game">
           <p for="quiz-game"> What was your favorite game when you were a child?</p>
-          <div class="quiz-games-images row">
+          <div class="quiz-games-questions">
             <div class="row">
               <div class="col-6">
                 <label for="gaming">
@@ -320,17 +320,29 @@
   <!-- Result display -->
   <div class="results-section" id="results-section">
     <div class="container-sanguine" id="sanguin-result">
-      <h3 class="results animate__animated animate__bounce"><span class="user-name-display"
-          id="user-name-sanguin"></span>, You're a sanguine</h3>
-      <p id="results">Sanguine are the most energetic and bubbly of all the temperament types. <br>They bring life and
-        energy into a room by their very presence.<br>They are outgoing, handshaking, touching person. <br>They are
-        the
-        easiest to be around socially.<br> Their cheerfulness and humor brighten everyone's life.</p>
-      <ul class="path">sanguine career path</ul>
-      <li class="list">Customer relation</li>
-      <li class="list">Public Relation</li>
-      <li class="list">Marketing</li>
-      <li class="list">sales</li>
+      <div class="row">
+        <div class="col">
+          <img src="assets/trait-images/sanguin.jpeg" alt="sanguin-img" class="trait-image-display">
+        </div>
+        <div class="col result-display-info">
+          <h3 class="results animate__animated animate__bounce">
+            Hey <span class="user-name-display" id="user-name-sanguin"></span>, You're a sanguin.
+          </h3>
+          <p id="results" class="animate__animated animate__wobble">
+            Sanguine are the most energetic and bubbly of all the temperament types.<br>They bring life and
+            energy into a room by their very presence.<br>They are outgoing, handshaky and touchy people.<br>
+            They are the easiest to be around socially.<br>Their cheerful nature and humor brightens
+            everyone's life.
+          </p>
+          <ul class="list-items animate__animated animate__wobble">
+            <h5 class="path">Sanguine career paths</h5>
+            <li class="list">Customer Relations</li>
+            <li class="list">Public Relations</li>
+            <li class="list">Marketing</li>
+            <li class="list">Sales</li>
+          </ul>
+        </div>
+      </div>
       <span class="btn btn-primary center-align nxt-btn" onclick="refreshPage()">Go back home</span>
     </div>
     <div class="container-melancholic" id="melancholic-result">

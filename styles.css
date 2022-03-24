@@ -224,7 +224,7 @@ input[type=submit] {
   margin: 6vh;
 }
 
-.quiz-work-questions, .quiz-color-questions, .quiz-vacation-questions, .quiz-nature-questions{
+.quiz-work-questions, .quiz-color-questions, .quiz-vacation-questions, .quiz-nature-questions,.quiz-games-questions{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -337,10 +337,10 @@ input[type=submit]:hover {
 }
     
 .game-question[type=radio] { 
-position: absolute;
-opacity: 0;
-width: 25vw;
-height: 30vh;
+  position: absolute;
+  opacity: 0;
+  width: 25vw;
+  height: 30vh;
 }
 
 .game-question[type=radio] + img {
@@ -348,8 +348,8 @@ cursor: pointer;
 }
 
 .game-question[type=radio]:checked + img{
-outline: 2px solid rgba(0, 136, 169, 1);
-box-shadow: 10px 10px rgba(0, 136, 169, 1);
+  outline: 2px solid rgba(0, 136, 169, 1);
+  box-shadow: 10px 10px rgba(0, 136, 169, 1);
 }
 
 .header2{
@@ -360,46 +360,51 @@ box-shadow: 10px 10px rgba(0, 136, 169, 1);
   text-align: center;
 }
 
-.path{
-  text-align: center;
-font-family: 'Inspiration', cursive;
-font-size: 20px;
-font-weight: bold;
-
-}
-.list{
-font-family: 'Inspiration', cursive;
-text-align: center;
-}
-
 /* Results section */
 
-.results, .user-name-display{
-font-weight: 900;    
-font-family: 'Rock Salt', cursive;
-padding-bottom: 2%;
-color: purple;
-text-align: center;
+.user-name-display, .results{
+  font-weight: 900;    
+  font-family: 'Rock Salt', cursive;
+  padding-bottom: 2%;
+  color: purple;
+  text-align: center;
+}
 
+.list-items{
+  text-align: center;
+  list-style: inside;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.list{
+  color: purple;
 }
 
 #results{
-font-weight: bold;
-line-height: 30px;
-font-family: 'Inspiration', cursive;
-padding-bottom: 2%;
-
+  font-weight: bold;
+  line-height: 30px;
+  padding-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .path{
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-font-family: 'Inspiration', cursive;
-font-size: 20px;
-font-weight: bold;
-
+  font-family: 'Montserrat', sans-serif;
+  color: black !important;
 }
-.list{
-font-family: 'Inspiration', cursive;
-text-align: center;
+
+.trait-image-display{
+  padding: 2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.result-display-info{
+  padding: 2vw;
 }
 /*styling of contact section*/
 #contact{
