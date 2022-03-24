@@ -354,10 +354,7 @@ input[type=submit]:hover {
     color: purple;
     
 }
-/* Styling for results */
-.results-section{
-  display: none;
-}
+
   #contact{
       background-color: azure;
       background-repeat: no-repeat;
@@ -391,6 +388,21 @@ input::placeholder {
     color: purple;
     text-align: center;
 }
+
+.path{
+   text-align: center;
+  font-family: 'Inspiration', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.list{
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+}
+
+/* Results section */
+
 .results{
   font-weight: 900;    
   font-family: 'Rock Salt', cursive;
@@ -407,16 +419,7 @@ input::placeholder {
   padding-bottom: 2%;
 
 }
-.path{
-   text-align: center;
-  font-family: 'Inspiration', cursive;
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-.list{
-  font-family: 'Inspiration', cursive;
-  text-align: center;
-}
 
-
+#sanguin-result, #phlegmatic-result, #choleric-result, #melancholic-result{
+  display: none !important;
+}

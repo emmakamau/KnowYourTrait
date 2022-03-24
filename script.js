@@ -4,6 +4,7 @@ $(document).ready(function(){
     var choleric = 0
     var phlegmatic = 0
     var melancholic = 0
+    var userName
     
     function myUser(userName){
         this.user = userName
@@ -81,7 +82,7 @@ $(document).ready(function(){
     $("form#quiz-form").submit(function(event){
         event.preventDefault()
         
-        var userName = $("input#user-name").val()
+        userName = $("input#user-name").val()
 
         var newUser = new myUser(userName)
         vacationChoice = newUser.vacationQuestion()
@@ -90,14 +91,23 @@ $(document).ready(function(){
         colorQuestion = newUser.colorQuestion()
         gameQuestion = newUser.gameQuestion()
 
-        if(sanguin > melancholic && phlegmatic && choleric){
+        if(sanguin > melancholic && sanguin > phlegmatic && sanguin > choleric){
+            $("div#sanguin-result").show()
+            $("div#quiz-section").hide()
+            $("#contact").hide()
             alert(`Hey ${userName}, You are a Sanguin`)
-        }else if(melancholic > sanguin && phlegmatic && choleric){
+        }else if(melancholic > sanguin && melancholic > phlegmatic && melancholic > choleric){
             alert(`Hey ${userName}, You are a Melancholic`)
-        }else if(phlegmatic > sanguin && choleric && melancholic){
+            $("div#melancholic-result").show()
+            $("#contact").hide()
+        }else if(phlegmatic > sanguin && phlegmatic > choleric && phlegmatic > melancholic){
             alert(`Hey ${userName}, You are a Phlegmatic`)
+            $("div#phlegmatic-result").show()
+            $("#contact").hide()
         }else{
             alert(`Hey ${userName}, You are a Choleric`)
+            $("div#choleric-result").show()
+            $("#contact").hide()
         }
 
         console.log(`My name is ${userName}`)
@@ -106,8 +116,6 @@ $(document).ready(function(){
         console.log("Choleric", choleric)
         console.log("Phlegmatic", phlegmatic)
     })
-
-    $("img").click(function(){})
     
 
     /*code to hide quiz until start test button is clicked*/
